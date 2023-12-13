@@ -1,0 +1,24 @@
+{
+    "expansion": false,
+    "google_play_key": null,
+    "google_play_salt": null,
+    "heap_size": "3",
+    "icon_name": "Lack Of Colors",
+    "include_pil": false,
+    "include_sqlite": false,
+    "layout": null,
+    "name": "Lack Of Colors",
+    "numeric_version": 1,
+    "orientation": "sensorLandscape",
+    "package": "com.dazzleteam.lackofcolors",
+    "permissions": [
+        "VIBRATE",
+        "INTERNET"
+    ],
+    "source": false,
+    "store": "none",
+    "update_always": true,
+    "update_icons": true,
+    "update_keystores": true,
+    "version": "0.1.0"
+}

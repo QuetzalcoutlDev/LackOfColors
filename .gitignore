@@ -1,0 +1,7 @@
+.vscode/*
+
+android.keystore
+bundle.keystore
+log.txt
+traceback.txt
+errors.txt
