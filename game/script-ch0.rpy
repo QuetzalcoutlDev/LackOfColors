@@ -193,15 +193,15 @@ label ch_0:
     shiori "La bolsa es de color rojo,"
     shiori normal1 "En la mesa está el dinero."
     shiori "Apresurate porque no querrás llegar tarde a la universidad."
-    show shiori idle
+    show shiori idle at cso11
     ai "Vale, ya regreso."
     shiori normal1 "Te estare esperando."
     hide shiori
     stop music fadeout 2.0
     pause 2.5
     "¡¡¿¿PORQUE ME TIENE QUE PASAR ESTO??!!"
-    "¿Por qué tenia que ser una harina en especifico?"
-    "{i}*Suspiro{/i}"
+    "¿Por qué tiene que ser una harina en especifico?"
+    "{i}*Suspiro*{/i}"
     pause 2.0
     "¿Será muy complicado comprar sin poder ver los colores?"
     "Voy a tener que averiguarlo."
@@ -213,23 +213,24 @@ label ch_0:
     "Lo malo es que no se si sera dificil poder comprar sin ver los colores."
     "Que extraño es todo esto."
     pause 2.0
-    scene bg store with hgradient_left_scene_full
+    scene bg convenience_store with hgradient_left_scene_full
     pause 3.0
     play audio store_ring
-    scene bg convenience_store with hgradient_left
+    scene bg store with hgradient_left
     pause 1.0
     show yu idle at cso11
     play music m2 fadein 2.0
     yu "Hola Ai, ¿En qué te puedo ayudar?"
     ai "Hola Yu, vine a comprar algunas cosas para los pastelillos que hara mi máma para el evento de encendido de luces."
+    $ _yu_name = _("Yu")
     "Ella es Yu Ishikawa."
     "Trabaja en esta tienda de conveniencia."
     "Es una amiga y vecina."
-    yu happy2 "Oh si, llevo esperando mucho tiempo el evento."
+    yu happy2 "Que bien, llevo esperando mucho tiempo el evento."
     yu "Quiero probar los pastelillos que tu máma prepara."
     show yu happy2 at j11
     yu "Es una de las cosas que más me gusta del evento."
-    show yu happy1
+    show yu happy1 at cso11
     ai "Está vez no le faltan muchos ingredientes."
     yu idle "Eso es una buena noticia."
     yu normal1 "Asi está un poco más tranquila."
@@ -239,9 +240,10 @@ label ch_0:
     "¿Será necesario que le pida ayuda?"
     "..."
     "Mejor intento a ver si puedo comprar asi como estoy ahora."
+    show yu idle at cso11
     hide yu
     pause 1.0
-    scene bg convenience_store with hgradient_left_scene_full
+    scene bg store with hgradient_left_scene_full
     pause 1.0
     show ai hmm1 at cso11
     ai "Mi máma quiere dos kilos de harina de trigo."
@@ -312,17 +314,22 @@ label ch_0:
     "Si no logro descubrir porque me paso esto, no se que hare."
     stop music fadeout 2.0
     pause 2.4
-    scene bg store with hgradient_left_scene_full
+    scene bg convenience_store with hgradient_left_scene_full
     pause 1.0
     "Saliendo de la tienda comienzo a sentir algo extraño."
     show vignette2 onlayer effects 
+    show black2 onlayer effects2
     with dissolve 
+    play music terrorGround fadein 2.0
     "Me siento..."
     "¿Decaida?"
     "Es una sensación super rara."
     "La puedo describir como un sentimiento de pesadez extraño."
     "Pero a la vez es como si algo me oprimiera el pecho."
-    hide vignette2 with Dissolve(1.6)
+    hide vignette2 onlayer effects 
+    hide black2 onlayer effects2
+    with Dissolve(1.6)
+    stop music fadeout 2.0
     pause 2.0
     "Pasaron unos momentos y esa sensación se fue..."
     ai "{i}*Suspiro*{/i}"
@@ -331,6 +338,116 @@ label ch_0:
     pause 1.6
     show bg ai_departament with hgradient_left_scene_full
     pause 2.0
-    ""
+    "Sinceramente no se que fue esa sensación de hace rato."
+    "Nunca la habia experimentado antes."
+    "Espero que no se vuelva a repetir."
+    pause 1.0
+    play audio open_door
+    show bg ai_livingroom with hgradient_left
+    pause 1.0
+    play music m1 fadein 2.0
+    pause 0.25
+    show shiori idle at cso11
+    shiori "Hola de nuevo hija."
+    ai "Aqui traigo lo que pediste."
+    shiori normal1 "Excelente."
+    shiori "Ahora si podre terminar los pastelillos."
+    shiori reflexive1 "Se que ha todos les sorprendera la nueva receta de estos pastelillos."
+    ai "¿Para eso era la harina que querias?"
+    show shiori normal1 at j11
+    shiori "Pues claro."
+    shiori "Esa harina, dejo los ultimos pastelillos que hice con una consistencia realmente agradable."
+    shiori idle "Es realmente buena."
+    "Mi máma hizo hace como dos semanas para probar una nueva receta para sus pastelillos."
+    "No lo recordaba, pero ahi está el dato."
+    ai "¿Y cuantos pastelillos pretendes hacer?"
+    shiori hmm0 "Los que pueda hacer."
+    shiori normal1 "Jeje."
+    shiori idle "Se te va a hacer tarde para ir a la universidad, será mejor que desayunes de una vez."
+    ai "Es cierto."
+    ai "Casi lo olvidaba."
+    stop music fadeout 1.5
+    window hide(Dissolve(.2))
+    show shiori idle at cso11
+    hide shiori
+    pause 1.0
+    scene black with Dissolve(2.0)
+    pause 1.0
+    window auto
+    "Mi máma y yo nos sentamos a comer."
+    "Mientras comiamos me comenzo a hacer preguntas que siempre hace."
+    "¿Qué si tengo novio? o si ¿Por qué no salgo mucho?"
+    "No me molesta que las haga."
+    "Seria malo que no me las haga."
+    "¿Me entienden?"
+    window hide(Dissolve(.2))
+    pause 2.0
+    scene bg ai_livingroom with hgradient_left
+    pause 1.0
+    "Casi terminando de comer, le hice una pregunta a mi máma."
+    show shiori idle at cso11
+    play music m2 fadein 1.5
+    pause 1.0
+    ai "Máma, ¿Te puedo hacer una pregunta?"
+    shiori normal1 "Claro hija, no tienes porque preguntarme."
+    show shiori idle
+    ai "Bueno, es que solo para que lo supieras."
+    ai "Bueno..."
+    ai "¿Si alguna vez despertaras sin poder ver los colores que harias?"
+    shiori normal2 "Hmm..."
+    shiori normal4 "Bueno..."
+    shiori "Es un poco extraña la pregunta."
+    shiori normal1 "Pero te respondere con esto..."
+    shiori idle "Los colores representan emociones, si me levantara sin poder verlos significaria que algo en mi no está bien."
+    shiori normal1 "Rojo, verde y azul son los colores de la luz, si ellos no están pues los reemplazarán el blanco y el negro."
+    
+    $ renpy.notify("El blanco, negro y gris no son colores, ellos son 'Acromaticos' que significa literalmente 'Sin color'\nEsto porque carecen de tono o saturación, pero comumente los seguimos llamando colores.")
+    shiori "Estos ultimos no son colores por ende todo se vera gris."
+    shiori sad2 "Disculpa hasta yo misma me confundi."
+    shiori idle "Bueno..."
+    shiori normal1 "Si yo me despertara sin poder ver los colores, pensaria que algo pasa conmigo."
+    shiori "Aunque es algo que no puede pasar es ver todo gris."
+    shiori normal2 "Pero simbolicamente ver todo gris significaria que mentalmente tenemos un problema emocional."
+    shiori "Es decir, algo no está bien en nosotros y vemos todo ya sin la misma emoción de antes."
+    shiori normal1 "¿Eso responde tu pregunta?"
+    show shiori idle
+    ai "Bueno..."
+    "La verdad no se si la responda."
+    "¿Estoy mal mentalmente?"
+    "La verdad no se..."
+    shiori normal1 "Solo piensalo."
+    shiori idle "Si algo te pasa no dudes en decirme."
+    ai "No no, no me pasa nada."
+    ai "Solo es algo que queria preguntarte desde hace rato."
+    shiori normal1 "Bueno, espero haber resolvido tu duda."
+    shiori "Pero te recuerdo que ahora si puedes llegar tarde a la universidad si no te apresuras."
+    show shiori idle
+    ai "Ah, es cierto."
+    ai "Ire a cambiarme."
+    shiori normal1 "Vale te espero."
+    hide shiori
+    window hide(Dissolve(.2))
+    stop music fadeout 1.5
+    scene bg ai_room with hgradient_left_scene_full
+    pause 1.0
+    window auto
+    "Se me hizo raro lo que mi máma respondio."
+    "¿Los colores representan las emociones?"
+    "Nunca lo habia visto de esa manera."
+    "Bueno..."
+    show ai meh1 at cso11
+    ai "Se que los colores dan una vibra diferente a nuestros alrededores."
+    ai meh2 "Pero nunca los vi como que representaban las emociones de una persona."
+    show ai meh1 
+    "O al menos no se me venia esa idea a la mente."
+    "..."
+    ai idle "Mejor voy a cambiarme."
+    ai hmm1 "Aunque..."
+    "Si, deberia bañarme primero." 
+    ai agh4 "{i}*Suspiro*{/i}"
+    ai angry1 "Voy a llegar super tarde."
+    hide ai
+    pause 1.0
+
 
     return

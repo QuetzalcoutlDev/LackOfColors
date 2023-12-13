@@ -12,6 +12,7 @@ define config.gl2 = False
 default persistent.chapter = 0
 default persistent.FirstInit = True
 default persistent.demo = True
+default persistent.notifyTime = 5
 
 image black = "#000000"
 image white = "#ffffff"
@@ -20,11 +21,26 @@ image vignette:
     xpos 0.5
     ypos 1.0
     alpha 0.7
+
 image vignette2:
     "gui/vignette.png"
     xpos 0.5
     ypos 1.0
-    alpha 0.9
+    block:
+        alpha 1.0
+        pause 0.1
+        alpha 0.9
+        pause 0.1
+        repeat
+
+image black2:
+    "#000000"
+    block:
+        alpha 0.6
+        pause 0.1
+        alpha 0.55
+        pause 0.1
+        repeat
 
 default _ai_name = _("Ai")
 default _shiori_name = _("Shiori")
@@ -34,7 +50,7 @@ default _hideaki_name = _("Hideaki")
 #define narrator = Character()
 define ai = Character(name="[_ai_name]", image="ai", what_prefix='"', what_suffix='"',  who_color="#ffffff")
 define shiori = Character(name="[_shiori_name]", image="shiori", what_prefix='"', what_suffix='"',  who_color="#ffffff")
-define yu = Character(name="[_uy_name]", image="yu", what_prefix='"', what_suffix='"',  who_color="#ffffff")
+define yu = Character(name="[_yu_name]", image="yu", what_prefix='"', what_suffix='"',  who_color="#ffffff")
 define hideaki = Character(name="[_hideaki_name]", image="hideaki", what_prefix='"', what_suffix='"',  who_color="#ffffff")
 
 ### Sonido y música
@@ -50,6 +66,7 @@ define audio.store_ring = "audio/convenience_storering.ogg"
 # Música
 define audio.m1 = "audio/Faded_mornings.ogg"
 define audio.m2 = "audio/In_my_mind.ogg"
+define audio.terrorGround = "audio/terror_ground.ogg"
 
 ### Sprites de personajes
 

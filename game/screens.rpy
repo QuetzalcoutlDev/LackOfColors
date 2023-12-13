@@ -1272,7 +1272,7 @@ screen notify(message):
     frame at notify_appear:
         text "[message!tq]"
 
-    timer 3.25 action Hide('notify')
+    timer persistent.notifyTime action Hide('notify')
 
 
 transform notify_appear:
