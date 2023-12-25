@@ -202,6 +202,7 @@ init python:
     build.classify("**/**.psd", None)
     build.classify("**/**.kra", None)
     build.classify("**/**.kra~", None)
+    build.classify("**/**.rpy", None)
 
     ## Para archivar, se clasifican como 'archive'.
 

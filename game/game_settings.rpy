@@ -42,16 +42,26 @@ image black2:
         pause 0.1
         repeat
 
+image cps:
+    "gui/cps.png"
+    zoom 0.4 alpha 0.0 xpos 1060 ypos 680
+    block:
+        linear 0.3 alpha 1.0 xoffset 5
+        pause 0.4
+        linear 0.3 alpha 0.0 xoffset 0
+        pause 0.4
+        repeat
+
 default _ai_name = _("Ai")
 default _shiori_name = _("Shiori")
 default _yu_name = _("Yu")
 default _hideaki_name = _("Hideaki")
 
-#define narrator = Character()
-define ai = Character(name="[_ai_name]", image="ai", what_prefix='"', what_suffix='"',  who_color="#ffffff")
-define shiori = Character(name="[_shiori_name]", image="shiori", what_prefix='"', what_suffix='"',  who_color="#ffffff")
-define yu = Character(name="[_yu_name]", image="yu", what_prefix='"', what_suffix='"',  who_color="#ffffff")
-define hideaki = Character(name="[_hideaki_name]", image="hideaki", what_prefix='"', what_suffix='"',  who_color="#ffffff")
+define narrator = Character(ctc="cps", ctc_position="fixed")
+define ai = Character(name="[_ai_name]", image="ai", what_prefix='"', what_suffix='"',  who_color="#ffffff", ctc="cps", ctc_position="fixed")
+define shiori = Character(name="[_shiori_name]", image="shiori", what_prefix='"', what_suffix='"',  who_color="#ffffff", ctc="cps", ctc_position="fixed")
+define yu = Character(name="[_yu_name]", image="yu", what_prefix='"', what_suffix='"',  who_color="#ffffff", ctc="cps", ctc_position="fixed")
+define hideaki = Character(name="[_hideaki_name]", image="hideaki", what_prefix='"', what_suffix='"',  who_color="#ffffff", ctc="cps", ctc_position="fixed")
 
 ### Sonido y música
 
@@ -62,10 +72,12 @@ define audio.knock_2 = "audio/knock_2.ogg"
 define audio.knock_3 = "audio/knock_3.ogg"
 define audio.open_door = "audio/open_door.ogg"
 define audio.store_ring = "audio/convenience_storering.ogg"
+define audio.shower = "audio/shower.ogg"
 
 # Música
 define audio.m1 = "audio/Faded_mornings.ogg"
 define audio.m2 = "audio/In_my_mind.ogg"
+define audio.m3 = "audio/Hikara.ogg"
 define audio.terrorGround = "audio/terror_ground.ogg"
 
 ### Sprites de personajes
@@ -165,3 +177,5 @@ image caja = "images/objects/caja.png"
 image azucar = "images/objects/azucar.png"
 image harina1 = "images/objects/harina_1.png"
 image harina2 = "images/objects/harina_2.png"
+
+

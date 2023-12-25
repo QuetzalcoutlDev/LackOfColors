@@ -256,6 +256,7 @@ screen quick_menu():
             textbutton _("Saltar") action Skip() alternate Skip(fast=True, confirm=True)
             textbutton _("Auto") action Preference("auto-forward", "toggle")
             textbutton _("Guardar") action ShowMenu('save')
+            textbutton _("Cargar") action ShowMenu('load')
             if config.has_quicksave:
                 textbutton _("Guardar R.") action QuickSave()
                 textbutton _("Cargar R.") action QuickLoad()
@@ -1294,7 +1295,6 @@ style notify_frame:
 
 style notify_text:
     properties gui.text_properties("notify")
-
 
 ## Pantalla NVL ################################################################
 ##

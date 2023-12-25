@@ -37,10 +37,10 @@ label start:
     $ persistent.FirstInit = False
 
     $ chapter = 0
-    call ch_0
+    call ch_0 from _call_ch_0
     
     if persistent.demo:
-        call demo
+        call demo from _call_demo
 
     return
 
