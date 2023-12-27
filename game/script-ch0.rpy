@@ -529,6 +529,78 @@ label ch_0:
     "..."
     ai "Bueno..."
     ai "¿Ahora que hago?"
+    pause 2.0
+    "..."
+    "Viendo mi 'armario', puedo recordar la ropa que me he puesto."
+    "{i}Como toda persona...{/i}"
+    ai "{i}*Suspiro*{/i}"
+    ai "Vere que ropa me puedo poner..."
+    window hide(Dissolve(.5))
     pause 1.0
-    
+    stop music fadeout 2.0
+    scene black with Dissolve(2.0)
+    pause 2.0
+    scene bg ai_room with Dissolve(1.0)
+    pause 1.0
+    window auto
+    pause 1.0
+    show ai casual idle at cso11
+    ai "Bueno, ya estoy lista."
+    "No soy una experta cuando se trata de escoger ropa."
+    "Pero en está situación simplemente no me puedo poner a pensar en esas cosas."
+    ai casual normal4 "No es la mejor elección, pero recuerdo como iban sus colores."
+    ai "Asi que mal no me veo."
+    show ai casual meh1
+    "A veces me critico a mi misma por mi aspecto."
+    "Quizás es algo normal..."
+    "Aunque lo dudo, pero simplemente pienso de esa manera a veces."
+    "{i}¿Serán pensamientos intrusivos?{/i}"
+    "Quien sabe."
+    "Solo se que a veces pienso de esa manera."
+    play music m3 fadein 1.7
+    ai casual normal2 "Creo que mejor ahora si me voy."
+    show ai at cso11
+    hide ai
+    pause 1.0
+    "Después de recoger mis cosas me dirijo a la sala."
+    pause 1.0
+    scene bg ai_livingroom with hgradient_left
+    pause 1.0
+    show shiori idle at cso11
+    shiori "Hola de nuevo hija, ¿Ya te vas?"
+    ai "Si, espero poder llegar temprano."
+    shiori normal1 "No seas pesimista, aun te queda tiempo." 
+    shiori "Si sales ahora llegaras temprano."
+    show shiori idle 
+    ai "Bueno, entonces..."
+    ai "Me ire ahora jeje."
+    shiori normal1 "No te detengo más."
+    show shiori idle 
+    ai "Adiós máma."
+    shiori normal1 "Que te vaya bien."
+    shiori normal3 "Recuerda que si necesitas hablar de algo..."
+    shiori "No dudes en decirme."
+    show shiori normal2 
+    ai "Descuida máma, no pasa nada."
+    "¿Tan extraña fue mi pregunta?"
+    "..."
+    ai "Ahora si me voy."
+    shiori normal1 "Adiós hija."
+    show shiori at cso11
+    hide shiori
+    stop music fadeout 1.6
+    pause 2.0
+    "..."
+    "Mientras pienso que me puede deparar este día tan extraña, solo salgo de mi casa."
+    pause 1.0
+    scene bg ai_departament with hgradient_left_scene_full
+    pause 1.0
+    ai "Siento que me estoy tomando con mucha calma esto de no poder ver los colores."
+    ai "¿Verdad?"
+    ai "Jaja."
+    pause 1.0
+    "Mejor dejo de hablar conmigo misma y comienzo a caminar hacia la universidad."
+    pause 1.0
+    scene bg crossing_city with hgradient_left_scene_full
+
     return

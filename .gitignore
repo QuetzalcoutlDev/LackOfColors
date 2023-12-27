@@ -5,4 +5,6 @@ bundle.keystore
 log.txt
 traceback.txt
 errors.txt
-game/*.rpyc
+*.rpyc
+game/cache/*
+game/saves/*
