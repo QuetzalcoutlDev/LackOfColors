@@ -8,3 +8,4 @@ errors.txt
 *.rpyc
 game/cache/*
 game/saves/*
+*.bak
