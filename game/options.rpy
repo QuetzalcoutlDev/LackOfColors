@@ -5,7 +5,6 @@
 ## descomentadas. Las líneas que empiezan con simple '#' son código comentado,
 ## puedes descomentarlas si es apropiado.
 
-
 ## Básico ######################################################################
 
 ## Nombre del juego en forma legible. Usado en el título de la ventana del
@@ -15,17 +14,14 @@
 
 define config.name = _("Lack Of Colors")
 
-
 ## Determina si el título dado más arriba se muestra en el menú principal.
 ## Ajústalo a 'False' para ocultar el título.
 
-define gui.show_name = True
-
+define gui.show_name = False
 
 ## Versión del juego.
 
 define config.version = "0.1.0"
-
 
 ## Texto situado en la pantalla 'Acerca de' del juego. Sitúa el texto entre
 ## comillas triples y deja una línea en blanco entre párrafos.
@@ -33,12 +29,10 @@ define config.version = "0.1.0"
 define gui.about = _p("""
 """)
 
-
 ## Nombre breve del juego para ejecutables y directorios en la distribución.
 ## Debe contener solo carácteres ASCII, sin espacios, comas o puntos y coma.
 
 define build.name = "LackOfColors"
-
 
 ## Sonidos y música ############################################################
 
@@ -50,20 +44,17 @@ define config.has_sound = True
 define config.has_music = True
 define config.has_voice = False
 
-
 ## Para permitir al usuario probar el volumen de los canales de sonido o voz,
 ## descomenta la línea más abajo y ajústala a un sonido de ejemplo.
 
 # define config.sample_sound = "sample-sound.ogg"
 # define config.sample_voice = "sample-voice.ogg"
 
-
 ## Descomenta la línea siguiente para ajustar un archivo de audio que sonará en
 ## el menú principal. Este archivo seguirá sonando en el juego hasta que sea
 ## detenido o se reproduzca otro archivo.
 
-# define config.main_menu_music = "main-menu-theme.ogg"
-
+define config.main_menu_music = audio.menuTheme
 
 ## Transiciones ################################################################
 ##
@@ -76,25 +67,17 @@ define config.has_voice = False
 define config.enter_transition = dissolve
 define config.exit_transition = dissolve
 
-
 ## Entre pantallas del menú del juego.
-
 define config.intra_transition = dissolve
 
-
 ## Transición tras la carga de una partida.
-
 define config.after_load_transition = dissolve
 
-
 ## Transición de acceso al menú principal tras finalizar el juego.
-
 define config.end_game_transition = fade
-
 
 ## No existe la variable que ajusta la transición cuando el juego comienza. Para
 ## ello se usa la sentencia 'with' al mostrar la escena inicial.
-
 
 ## Gestión de ventanas #########################################################
 ##
@@ -108,12 +91,10 @@ define config.end_game_transition = fade
 
 define config.window = "auto"
 
-
 ## Transiciones usadas para mostrar o esconder la ventana de diálogo
 
 define config.window_show_transition = Dissolve(.2)
 define config.window_hide_transition = Dissolve(.2)
-
 
 ## Preferencias por defecto ####################################################
 
@@ -125,14 +106,12 @@ default preferences.text_cps = 50
 define config.rollback_enabled = config.developer
 define config.allow_skipping = True
 
-
 ## El retraso por defecto del auto-avance. Números más grandes indican esperas
 ## mayores. El rango válido es 0-30.
 
 default preferences.afm_time = 15
 default preferences.music_volume = 0.7
 default preferences.sfx_volume = 1.00
-
 
 ## Directorio de guardado ######################################################
 ##
@@ -162,7 +141,6 @@ define config.predict_statements = 50
 define config.menu_clear_layers = ["front"]
 define config.gl_test_image = "white"
 define config.nvl_adv_transition = Dissolve(.2)
-
 
 ## Configuración de 'Build' ####################################################
 ##
@@ -221,7 +199,6 @@ init python:
 ## Play, en "Monetizar" > "Configuración de la monetización" > "Licencias".
 
 # define build.google_play_key = "..."
-
 
 ## Los nombres de usuario y de proyecto asociados con un proyecto itch.io,
 ## separados por una barra.

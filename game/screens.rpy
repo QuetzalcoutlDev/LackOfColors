@@ -292,11 +292,11 @@ style quick_button_text:
 
 screen navigation():
 
-    vbox:
+    hbox:
         style_prefix "navigation"
 
         xpos gui.navigation_xpos
-        yalign 0.5
+        yalign 0.96
 
         spacing gui.navigation_spacing
 
@@ -355,10 +355,13 @@ style navigation_button_text:
 
 screen main_menu():
 
+    if main_menu:
+        $ rpc.set_status(details=_("En menú principal"))
+        
     ## Esto asegura que cualquier otra pantalla de menu es remplazada.
     tag menu
 
-    add gui.main_menu_background
+    add "menuBG"
 
     ## Este marco vacío oscurece el menu principal.
     frame:
@@ -369,16 +372,14 @@ screen main_menu():
     use navigation
 
     if gui.show_name:
-
         vbox:
-            style "main_menu_vbox"
-
             text "[config.name!t]":
                 style "main_menu_title"
 
             text "[config.version]":
                 style "main_menu_version"
-
+    
+    add "menuFlash"
 
 style main_menu_frame is empty
 style main_menu_vbox is vbox
@@ -419,71 +420,124 @@ style main_menu_version:
 ## interior.
 
 screen game_menu(title, scroll=None, yinitial=0.0):
-
+    
     style_prefix "game_menu"
-
+    
     if main_menu:
-        add gui.main_menu_background
+        add "menuBG"
     else:
-        add gui.game_menu_background
-
+        add "black":
+            alpha 0.5
+    
     frame:
         style "game_menu_outer_frame"
-
-        hbox:
-
-            ## Reservar espacio para la sección de navegación.
-            frame:
-                style "game_menu_navigation_frame"
-
+        
+        vbox:
             frame:
                 style "game_menu_content_frame"
-
                 if scroll == "viewport":
-
                     viewport:
                         yinitial yinitial
                         scrollbars "vertical"
                         mousewheel True
                         draggable True
                         pagekeys True
-
                         side_yfill True
-
                         vbox:
                             transclude
-
                 elif scroll == "vpgrid":
-
                     vpgrid:
                         cols 1
                         yinitial yinitial
-
                         scrollbars "vertical"
                         mousewheel True
                         draggable True
                         pagekeys True
-
                         side_yfill True
-
                         transclude
-
                 else:
-
                     transclude
-
+            frame:
+                style "game_menu_navigation_frame"
+    
     use navigation
 
     textbutton _("Volver"):
         style "return_button"
 
         action Return()
-
+    
     label title
 
     if main_menu:
         key "game_menu" action ShowMenu("main_menu")
 
+# screen game_menu(title, scroll=None, yinitial=0.0):
+
+#     style_prefix "game_menu"
+
+#     if main_menu:
+#         add "menuBG"
+#     else:
+#         add black:
+#             alpha 0.5
+
+#     frame:
+#         style "game_menu_outer_frame"
+
+#         hbox:
+
+#             ## Reservar espacio para la sección de navegación.
+#             frame:
+#                 style "game_menu_navigation_frame"
+
+#             frame:
+#                 style "game_menu_content_frame"
+
+#                 if scroll == "viewport":
+
+#                     viewport:
+#                         yinitial yinitial
+#                         scrollbars "vertical"
+#                         mousewheel True
+#                         draggable True
+#                         pagekeys True
+
+#                         side_yfill True
+
+#                         vbox:
+#                             transclude
+
+#                 elif scroll == "vpgrid":
+
+#                     vpgrid:
+#                         cols 1
+#                         yinitial yinitial
+
+#                         scrollbars "vertical"
+#                         mousewheel True
+#                         draggable True
+#                         pagekeys True
+
+#                         side_yfill True
+
+#                         transclude
+
+#                 else:
+
+#                     transclude
+
+#     use navigation
+
+#     textbutton _("Volver"):
+#         style "return_button"
+
+#         action Return()
+
+#     label title
+
+#     if main_menu:
+#         key "game_menu" action ShowMenu("main_menu")
 
 style game_menu_outer_frame is empty
 style game_menu_navigation_frame is empty
@@ -499,22 +553,26 @@ style return_button is navigation_button
 style return_button_text is navigation_button_text
 
 style game_menu_outer_frame:
-    bottom_padding 30
-    top_padding 120
-
-    background "gui/overlay/game_menu.png"
+    bottom_padding 120
+    top_padding 30
+    background "black_overlay"
 
 style game_menu_navigation_frame:
-    xsize 280
-    yfill True
+    xsize 1280
+    ysize 100
+    xfill True
 
 style game_menu_content_frame:
-    left_margin 40
+    left_margin 300
     right_margin 20
-    top_margin 10
+    top_margin 75
 
 style game_menu_viewport:
-    xsize 920
+    xsize 980
+
+image black_overlay:
+    "black"
+    alpha 0.6
 
 style game_menu_vscrollbar:
     unscrollable gui.unscrollable
@@ -533,7 +591,7 @@ style game_menu_label_text:
 
 style return_button:
     xpos gui.navigation_xpos
-    yalign 1.0
+    yalign 0.9
     yoffset -30
 
 
@@ -588,16 +646,12 @@ style about_label_text:
 screen save():
 
     tag menu
-
     use file_slots(_("Guardar"))
-
 
 screen load():
 
     tag menu
-
     use file_slots(_("Cargar"))
-
 
 screen file_slots(title):
 
@@ -617,7 +671,7 @@ screen file_slots(title):
                 style "page_label"
 
                 key_events True
-                xalign 0.5
+                xalign 0.4
                 action page_name_value.Toggle()
 
                 input:
@@ -628,7 +682,7 @@ screen file_slots(title):
             grid gui.file_slot_cols gui.file_slot_rows:
                 style_prefix "slot"
 
-                xalign 0.5
+                xalign -0.3
                 yalign 0.5
 
                 spacing gui.slot_spacing
@@ -656,7 +710,7 @@ screen file_slots(title):
             vbox:
                 style_prefix "page"
 
-                xalign 0.5
+                xalign 0.3
                 yalign 1.0
 
                 hbox:
@@ -1275,14 +1329,12 @@ screen notify(message):
 
     timer persistent.notifyTime action Hide('notify')
 
-
 transform notify_appear:
     on show:
         alpha 0
         linear .25 alpha 1.0
     on hide:
         linear .5 alpha 0.0
-
 
 style notify_frame is empty
 style notify_text is gui_text

@@ -87,8 +87,8 @@ define gui.title_text_size = 50
 ## Menú principal y menús del juego ############################################
 
 ## Imágenes del menú principal y menús del juego.
-define gui.main_menu_background = "gui/main_menu.png"
-define gui.game_menu_background = "gui/game_menu.png"
+define gui.main_menu_background = "menuBG"
+define gui.game_menu_background = "menuBG"
 
 
 ## Diálogo #####################################################################
@@ -278,7 +278,6 @@ define gui.slot_spacing = 10
 ## Posición del texto del menú principal.
 define gui.main_menu_text_xalign = 1.0
 
-
 ## Marcos ######################################################################
 ##
 ## Estas variables controlan la apariencia de los marcos que pueden contener
@@ -334,7 +333,6 @@ define gui.vslider_borders = Borders(4, 4, 4, 4)
 ## Qué hacer con barras de deslizamiento no deslizables en la 'gui'. "hide" las
 ## esconde mientras que 'None' las muestra.
 define gui.unscrollable = "hide"
-
 
 ## Historial ###################################################################
 ##

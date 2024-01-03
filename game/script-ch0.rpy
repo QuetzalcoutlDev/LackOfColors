@@ -602,5 +602,65 @@ label ch_0:
     "Mejor dejo de hablar conmigo misma y comienzo a caminar hacia la universidad."
     pause 1.0
     scene bg crossing_city with hgradient_left_scene_full
+    pause 1.0
+    play music m1 fadein 2.0
+    pause 1.0
+    "Me tengo que dirigir a la estación de trenes para cruzar la ciudad e ir a la universidad."
+    "A veces voy en camión, pero creo que no es importante hablar de eso ahora..."
+    pause 2.0
+    "Caminando por la calle, hacia el cruce peatonal para ir hacia la calle que me lleva a la estación..."
+    "Valga la redundancia..."
+    "Me doy cuenta de algo que realmente puede ser muy malo en este preciso momento..."
+    ai "Entonces se pone cada vez más raro..."
+    show semaforo at objectShow
+    pause 1.0
+    "Ahora no puedo ver si el semáforo esta en rojo para poder caminar."
+    hide semaforo
+    ai "{i}*Suspiro*{/i}" 
+    pause 1.0
+    "Aunque..."
+    "No todo esta perdido."
+    ai "Ahora me siento estupida..."
+    "Si la forma de saber que esta en rojo es viendo si los autos están detenidos."
+    ai "Solo tengo que esperar un rato..."
+    pause 1.0
+    window hide(Dissolve(.4))
+    scene bg crossing_city with hgradient_left_scene_full
+    pause 1.0
+    window auto
+    "Paso alrededor de un minuto cuando por fin el semaforo se puso en rojo."
+    ai "Por fin..."
+    "Comienzo a caminar hacia la otra acera para dirigirme hacia la calle donde esta la estación de trenes."
+    "No esta muy lejos, asi que pues por eso me voy caminando hacia ella..."
+    pause 2.0
+    scene bg city_station with hgradient_left_scene_full
+    pause 1.0
+    ai "Bueno, por fin llegue..."
+    ai "Aun me queda tiempo para llegar."
+    "A veces llego tarde pero pues hoy no será el caso..."
+    "..."
+    ai "Solo me queda abordar el tren e ir..."
+    pause 1.0
+    stop music fadeout 2.0
+    pause 2.0
+    ai "Hoy realmente será un día extraño..."
+    ai "No se como estar todo el día sin poder ver los colores..."
+    window hide(Dissolve(.3))
+    pause 1.0
+    scene black with Dissolve(2.0)
+    pause 1.0
+    window auto
+    pause 0.5
+    "Al subirme al tren, comienzo a pensar en una razón de porque paso esto..."
+    "Simplemente no se que pensar de todo está situación..."
+    "¿Qué harian si de la nada dejaran de ver los colores?"
+    "¿Como actuarian?"
+    "Yo al menos no se como actuar."
+    "Esto me ha dejado súper confundida."
+    "Solo tendre que esperar..."
+    "Al menos eso creo..."
+    window hide(Dissolve(.3))
+    pause 2.0
+    $ persistent.capListComplete["cap0"] = True
 
     return

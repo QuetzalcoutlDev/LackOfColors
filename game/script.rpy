@@ -3,7 +3,7 @@ image chapterTXT = ParameterizedText(xalign=0.5, yalign=0.5, style="chapterText"
 default chapterInfo = _("")
 
 style chapterText:
-    size 42
+    size 30
     color "#ffffff"
     font "URWBookman-Light.otf"
     textalign 0.5
@@ -37,11 +37,12 @@ label start:
     $ persistent.FirstInit = False
 
     $ chapter = 0
+    $ rpc.set_status(details=_("Prologo: Amanecer descolorido"), state=_("Jugando..."))
     call ch_0 from _call_ch_0
     
     if persistent.demo:
         call demo from _call_demo
-
+        
     return
 
 label demo:
@@ -58,7 +59,7 @@ label demo:
     scene black
     pause 1.0
 
-    $ chapterInfo = _("Esto es solo una demo\nGracias por jugar Lack Of Colors\nUn juego hecho para la Github GameOFF 2023, para más información puedes leer el archivo 'LEEME.txt'")
+    $ chapterInfo = _("Esto es solo una demo\nGracias por jugar Lack Of Colors")
     show chapterTXT "[chapterInfo]" with Dissolve(1.5)
     pause 2.0
     hide chapterTXT with Dissolve(1.5)

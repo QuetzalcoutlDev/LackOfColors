@@ -8,9 +8,19 @@ init -1 python:
     config.has_autosave = False
     config.has_quicksave = False
 
+
+default persistent.capListComplete = {
+    "cap0": False, # Prologo 
+    "cap1": False, # Capitulo 1 (Aun no disponible en esta versión)
+    "cap2": False, # Capitulo 2 (Aun no disponible en esta versión)
+    "cap3": False  # Capitulo 3 (Aun no disponible en esta versión)
+}
+
 define config.gl2 = False
+define config.has_sync = False
 default persistent.chapter = 0
 default persistent.FirstInit = True
+default persistent.FirstGame = False
 default persistent.demo = True
 default persistent.notifyTime = 5
 
@@ -52,6 +62,24 @@ image cps:
         pause 0.4
         repeat
 
+image menuFlash:
+    "white"
+    menuFade
+
+image menuBG:
+    "images/menuBG/menuBG0000.png"
+    pause 0.5
+    "images/menuBG/menuBG0001.png"
+    pause 0.5
+    "images/menuBG/menuBG0002.png"
+    pause 0.5
+    repeat
+    
+transform menuFade:
+    easeout 0.9 alpha 0.0
+
+image QuetzalLogo = "images/QuetzalLogo.png"
+
 default _ai_name = _("Ai")
 default _shiori_name = _("Shiori")
 default _yu_name = _("Yu")
@@ -73,12 +101,14 @@ define audio.knock_3 = "audio/knock_3.ogg"
 define audio.open_door = "audio/open_door.ogg"
 define audio.store_ring = "audio/convenience_storering.ogg"
 define audio.shower = "audio/shower.ogg"
+define audio.IamQuetzalcoatl = "audio/IamQuetzalcoatl.ogg"
 
 # Música
 define audio.m1 = "audio/Faded_mornings.ogg"
 define audio.m2 = "audio/In_my_mind.ogg"
 define audio.m3 = "audio/Hikara.ogg"
 define audio.terrorGround = "audio/terror_ground.ogg"
+define audio.menuTheme = "audio/Lack.ogg"
 
 ### Sprites de personajes
 
@@ -210,11 +240,30 @@ image bg store = "images/bg/store.png"
 image bg ai_departament = "images/bg/ai-apartament.png"
 image bg convenience_store = "images/bg/convenience-store.png"
 image bg crossing_city = "images/bg/crossing_city.png"
+image bg city_station = "images/bg/city_station.png"
 
 ### Objetos
 image caja = "images/objects/caja.png"
 image azucar = "images/objects/azucar.png"
 image harina1 = "images/objects/harina_1.png"
 image harina2 = "images/objects/harina_2.png"
+image semaforo_apagado = "images/objects/semaforo_apagado.png"
+image semaforo_encendido_1 = "images/objects/semaforo_encendido_1.png"
+image semaforo_encendido_2 = "images/objects/semaforo_encendido_2.png"
+image semaforo_encendido_3 = "images/objects/semaforo_encendido_3.png"
 
-
+image semaforo:
+    "semaforo_apagado"
+    pause 0.6
+    "semaforo_encendido_1"
+    pause 6.0
+    "semaforo_apagado"
+    pause 0.6
+    "semaforo_encendido_2"
+    pause 6.0
+    "semaforo_apagado"
+    pause 0.6
+    "semaforo_encendido_3"
+    pause 6.0
+    "semaforo_apagado"
+    repeat
