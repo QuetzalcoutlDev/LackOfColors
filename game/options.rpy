@@ -110,7 +110,7 @@ define config.allow_skipping = True
 ## mayores. El rango válido es 0-30.
 
 default preferences.afm_time = 15
-default preferences.music_volume = 0.7
+default preferences.music_volume = 0.9
 default preferences.sfx_volume = 1.00
 
 ## Directorio de guardado ######################################################

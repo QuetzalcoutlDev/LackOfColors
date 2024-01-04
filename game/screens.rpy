@@ -344,8 +344,10 @@ style navigation_button:
     properties gui.button_properties("navigation_button")
 
 style navigation_button_text:
-    properties gui.button_text_properties("navigation_button")
 
+    text_align 0.5
+    xalign 0.5
+    properties gui.button_text_properties("navigation_button")
 
 ## Pantalla del menú principal #################################################
 ##
@@ -354,9 +356,6 @@ style navigation_button_text:
 ## https://www.renpy.org/doc/html/screen_special.html#main-menu
 
 screen main_menu():
-
-    if main_menu:
-        $ rpc.set_status(details=_("En menú principal"))
         
     ## Esto asegura que cualquier otra pantalla de menu es remplazada.
     tag menu
@@ -379,7 +378,10 @@ screen main_menu():
             text "[config.version]":
                 style "main_menu_version"
     
-    add "menuFlash"
+    if not persistent.FirstGame:
+        add "menuFlashInvert"
+    else:
+        add "menuFlash"
 
 style main_menu_frame is empty
 style main_menu_vbox is vbox
@@ -390,7 +392,7 @@ style main_menu_version is main_menu_text
 style main_menu_frame:
     xsize 280
     yfill True
-
+    
     background "gui/overlay/main_menu.png"
 
 style main_menu_vbox:
@@ -472,73 +474,6 @@ screen game_menu(title, scroll=None, yinitial=0.0):
     if main_menu:
         key "game_menu" action ShowMenu("main_menu")
 
-# screen game_menu(title, scroll=None, yinitial=0.0):
-
-#     style_prefix "game_menu"
-
-#     if main_menu:
-#         add "menuBG"
-#     else:
-#         add black:
-#             alpha 0.5
-
-#     frame:
-#         style "game_menu_outer_frame"
-
-#         hbox:
-
-#             ## Reservar espacio para la sección de navegación.
-#             frame:
-#                 style "game_menu_navigation_frame"
-
-#             frame:
-#                 style "game_menu_content_frame"
-
-#                 if scroll == "viewport":
-
-#                     viewport:
-#                         yinitial yinitial
-#                         scrollbars "vertical"
-#                         mousewheel True
-#                         draggable True
-#                         pagekeys True
-
-#                         side_yfill True
-
-#                         vbox:
-#                             transclude
-
-#                 elif scroll == "vpgrid":
-
-#                     vpgrid:
-#                         cols 1
-#                         yinitial yinitial
-
-#                         scrollbars "vertical"
-#                         mousewheel True
-#                         draggable True
-#                         pagekeys True
-
-#                         side_yfill True
-
-#                         transclude
-
-#                 else:
-
-#                     transclude
-
-#     use navigation
-
-#     textbutton _("Volver"):
-#         style "return_button"
-
-#         action Return()
-
-#     label title
-
-#     if main_menu:
-#         key "game_menu" action ShowMenu("main_menu")
-
 style game_menu_outer_frame is empty
 style game_menu_navigation_frame is empty
 style game_menu_content_frame is empty
@@ -555,6 +490,7 @@ style return_button_text is navigation_button_text
 style game_menu_outer_frame:
     bottom_padding 120
     top_padding 30
+    
     background "black_overlay"
 
 style game_menu_navigation_frame:
@@ -692,6 +628,7 @@ screen file_slots(title):
                     $ slot = i + 1
 
                     button:
+
                         action FileAction(slot)
 
                         has vbox

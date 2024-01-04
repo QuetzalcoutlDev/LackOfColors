@@ -28,7 +28,7 @@ label start:
 
     if persistent.FirstInit:
         $ persistent.chapter = 0
-        $ chapterInfo = _("{size=-15}Prologo:{/size}\nAmanecer descolorido")
+        $ chapterInfo = _("{size=-12}Prologo:{/size}\nAmanecer descolorido")
         show chapterTXT "[chapterInfo]" with Dissolve(1.5)
         pause 2.0
         hide chapterTXT with Dissolve(1.5)
@@ -37,6 +37,7 @@ label start:
     $ persistent.FirstInit = False
 
     $ chapter = 0
+    $ persistent.chapter = 0
     $ rpc.set_status(details=_("Prologo: Amanecer descolorido"), state=_("Jugando..."))
     call ch_0 from _call_ch_0
     
@@ -59,9 +60,9 @@ label demo:
     scene black
     pause 1.0
 
-    $ chapterInfo = _("Esto es solo una demo\nGracias por jugar Lack Of Colors")
+    $ chapterInfo = _("Está versión del juego es solo una demo\nGracias por jugar Lack Of Colors\nNo olvides dar tu opinión sobre el mismo\nMe ayudarás mucho con tu comentario\n:)")
     show chapterTXT "[chapterInfo]" with Dissolve(1.5)
-    pause 2.0
+    pause 5.0
     hide chapterTXT with Dissolve(1.5)
     pause 2.0
     

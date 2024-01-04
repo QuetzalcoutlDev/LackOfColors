@@ -130,7 +130,7 @@ define gui.namebox_tile = False
 
 ## Colocación del diálogo relativa a la caja de texto. Puede ser el número de
 ## píxels relativos a la esquina superor izquierda o 0.5 para centrar.
-define gui.dialogue_xpos = 276
+define gui.dialogue_xpos = 267
 define gui.dialogue_ypos = 30
 
 ## La anchura máxima del texto del diálogo, en píxels.
@@ -173,7 +173,7 @@ define gui.button_text_insensitive_color = gui.insensitive_color
 
 ## La alineación horizontal del texto del botón. (0.0 es izquierda, 0.5 es
 ## centro, 1.0 es derecha).
-define gui.button_text_xalign = 0.0
+define gui.button_text_xalign = 0.5
 
 
 ## Estas variables invalidan ajustes para diversos tipos de botones. Ver en la
@@ -198,8 +198,7 @@ define gui.quick_button_text_selected_color = gui.accent_color
 ## adecuados. Por ejemplo, es posible descomentar la linea siguiente para
 ## ajustar la anchura de los botones de navegación.
 
-# define gui.navigation_button_width = 250
-
+define gui.navigation_button_width = 140
 
 ## Botones de opción ###########################################################
 ##

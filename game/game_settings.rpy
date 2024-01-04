@@ -16,6 +16,8 @@ default persistent.capListComplete = {
     "cap3": False  # Capitulo 3 (Aun no disponible en esta versión)
 }
 
+default chapter = 0
+define persistent.chapter = 0
 define config.gl2 = False
 define config.has_sync = False
 default persistent.chapter = 0
@@ -66,6 +68,10 @@ image menuFlash:
     "white"
     menuFade
 
+image menuFlashInvert:
+    "black"
+    menuFade
+
 image menuBG:
     "images/menuBG/menuBG0000.png"
     pause 0.5
@@ -79,6 +85,7 @@ transform menuFade:
     easeout 0.9 alpha 0.0
 
 image QuetzalLogo = "images/QuetzalLogo.png"
+image QuetzalLogoInvert = "images/QuetzalLogoInvert.png"
 
 default _ai_name = _("Ai")
 default _shiori_name = _("Shiori")
