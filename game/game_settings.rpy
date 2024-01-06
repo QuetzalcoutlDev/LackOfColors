@@ -8,7 +8,6 @@ init -1 python:
     config.has_autosave = False
     config.has_quicksave = False
 
-
 default persistent.capListComplete = {
     "cap0": False, # Prologo 
     "cap1": False, # Capitulo 1 (Aun no disponible en esta versión)
@@ -17,7 +16,6 @@ default persistent.capListComplete = {
 }
 
 default chapter = 0
-define persistent.chapter = 0
 define config.gl2 = False
 define config.has_sync = False
 default persistent.chapter = 0
@@ -244,7 +242,8 @@ image yu happy4 = "images/sprites/yu/Yu happy1.png"
 image bg ai_room = "images/bg/ai-room.png"
 image bg ai_livingroom = "images/bg/ai-livingroom.png"
 image bg store = "images/bg/store.png"
-image bg ai_departament = "images/bg/ai-apartament.png"
+image bg departament = "images/bg/departament.png"
+image bg ai_house = "images/bg/ai-house.png"
 image bg convenience_store = "images/bg/convenience-store.png"
 image bg crossing_city = "images/bg/crossing_city.png"
 image bg city_station = "images/bg/city_station.png"

@@ -14,16 +14,15 @@ label splashscreen:
     if not persistent.FirstGame:
         scene black 
         pause 1.0
-        show SplashInfo _("¡Este juego es una demo!\nEl juego puede someterse a cambios a medida que se actualice\nDialogos, imagenes, sonidos y música pueden llegar a cambiar.") with Dissolve(1.0)
+        show SplashInfo _("¡Este juego es una demo!\nEl juego puede someterse a cambios a medida que se actualice\nDiálogos, imágenes, sonidos y música pueden llegar a cambiar.") with Dissolve(1.0)
         pause 6
         hide SplashInfo with Dissolve(1.0)
         pause 1.0
-        scene white with Dissolve(1.0)
         $ persistent.FirstGame = True
 
     if persistent.FirstGame:
         scene black 
-        show SplashInfo _("{size=-9}Usa audifonos para tener una mejor experiencia.{/size}")
+        show SplashInfo _("{size=-6}Usa audífonos para disfrutar de una mejor experiencia.{/size}")
         pause 3.0
         hide SplashInfo with Dissolve(1.0)
         pause 1.0
@@ -51,7 +50,7 @@ label splashscreen:
 label after_load:
 
     if persistent.chapter == 0:
-        $ rpc.set_status(details=_("Prologo: Amanecer descolorido"), state=_("Jugando..."))
+        $ rpc.set_status(details=_("Prólogo: Amanecer descolorido"), state=_("Jugando..."))
     return
 
 label before_main_menu:

@@ -1053,21 +1053,25 @@ screen mouse_help():
         label _("Clic izquierdo")
         text _("Avanza el diálogo y activa la interfaz.")
 
-    hbox:
-        label _("Clic medio")
-        text _("Oculta la interfaz.")
+    # hbox:
+    #     label _("Clic medio")
+    #     text _("Oculta la interfaz.")
 
+    # hbox:
+    #     label _("Clic derecho")
+    #     text _("Accede al menú del juego.")
+    
     hbox:
         label _("Clic derecho")
-        text _("Accede al menú del juego.")
+        text _("Oculta la interfaz.")
 
-    hbox:
-        label _("Rueda del ratón arriba\nClic en lado de retroceso")
-        text _("Retrocede al diálogo anterior.")
+    # hbox:
+    #     label _("Rueda del ratón arriba\nClic en lado de retroceso")
+    #     text _("Retrocede al diálogo anterior.")
 
-    hbox:
-        label _("Rueda del ratón abajo")
-        text _("Avanza hacia el diálogo siguiente.")
+    # hbox:
+    #     label _("Rueda del ratón abajo")
+    #     text _("Avanza hacia el diálogo siguiente.")
 
 
 screen gamepad_help():

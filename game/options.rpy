@@ -169,6 +169,7 @@ init python:
     ## cualquier parte del proyecto.
 
     build.archive("data", "all")
+    build.archive("scripts", "all")
 
     ## Clasifica archivos como 'None' para excluirlos de la distribución.
 
@@ -181,12 +182,16 @@ init python:
     build.classify("**/**.kra", None)
     build.classify("**/**.kra~", None)
     build.classify("**/**.rpy", None)
-
+    build.classify("**/**.rpym", None)
     ## Para archivar, se clasifican como 'archive'.
 
     build.classify('game/**.png', 'data')
     build.classify('game/**.jpg', 'data')
     build.classify("game/**.ogg", "data")
+    build.classify("game/fonts/**.**", "data")
+
+    build.classify("game/**.rpyc", "scripts")
+    build.classify("game/**.rpymc", "scripts")
 
     ## Los archivos que corresponden a patrones de documentation se duplican en
     ## la distribución de mac; aparecerán en los archivos app y zip.

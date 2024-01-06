@@ -28,7 +28,7 @@ label start:
 
     if persistent.FirstInit:
         $ persistent.chapter = 0
-        $ chapterInfo = _("{size=-12}Prologo:{/size}\nAmanecer descolorido")
+        $ chapterInfo = _("{size=-12}Prólogo:{/size}\nAmanecer descolorido")
         show chapterTXT "[chapterInfo]" with Dissolve(1.5)
         pause 2.0
         hide chapterTXT with Dissolve(1.5)
@@ -38,7 +38,7 @@ label start:
 
     $ chapter = 0
     $ persistent.chapter = 0
-    $ rpc.set_status(details=_("Prologo: Amanecer descolorido"), state=_("Jugando..."))
+    $ rpc.set_status(details=_("Prólogo: Amanecer descolorido"), state=_("Jugando..."))
     call ch_0 from _call_ch_0
     
     if persistent.demo:

@@ -6,9 +6,9 @@ label ch_0:
     window auto
     $ quick_menu = True
     "¿Imaginan levantarse y ver que lo más notorio en este mundo simplemente ya no está?"
-    "O simplemente carece de ese tono caracteristico que ayuda a ver este que lugar no es-"
+    "O simplemente carece de ese tono característico que ayuda a ver este qué lugar no es un-"
     pause 1.5
-    "No se como describirlo."
+    "Realmente no se como describirlo."
     "Pero simplemente eso ya no estaba."
     "Sin razón alguna."
     "O no una que pudiera encontrar al principio."
@@ -24,7 +24,7 @@ label ch_0:
     show ai agh3
     "Mi nombre es Ai Tanaka."
     "Una chica de 21 años común y corriente que se levanta todos los días para ir a la universidad."
-    "A excepción de los fines de semana claro esta."
+    "A excepción de los fines de semana claro está."
     "Todo normal."
     "¿Verdad?"
     pause 1.0
@@ -34,13 +34,13 @@ label ch_0:
     "Si, estoy como cierto gato que odia los lunes."
     "A veces es muy molesto levantarse temprano para ir a la universidad después de un día de descanso."
     ai agh5 "{i}*Suspiro*{/i}"
-    ai hmm2 "No debi dormirme tan tarde."
+    ai hmm2 "No debí dormirme tan tarde."
     ai "Siento como si no hubiera dormido nada."
     show ai hmm1
     "Normalmente evito mis responsabilidades jugando o dibujando o haciendo otra actividad que no sea hacer mi tarea primero."
-    "Si, sueno bastante patetica."
+    "Si, sueno bastante patética."
     "Pero oye, siempre pasa que de un día para otro termino haciendo las tareas."
-    "¿Eso esta bien?"
+    "¿Eso está bien?"
     "Sinceramente no."
     ai normal2 "Bueno, será mejor que vaya a la sala."
     ai "¿Qué hora será?"
@@ -52,14 +52,14 @@ label ch_0:
     "Mirando mi alrededor puedo notar que todo mi cuarto carece de algún tipo de color."
     show ai surprise1 at lio11
     ai "¡¿Qué car#j04?!"
-    "¿Por qué mi cuarto esta tan descolorido?"
-    "¿Lo pintaron sin yo darme cuenta?"
+    "¿Por qué mi cuarto está tan descolorido?"
+    "¿Lo pintaron sin darme cuenta?"
     ai normal6 "Vamos, esto debe ser una broma de mal gusto."
     ai normal2 "Pero..."
     show ai hmm1
-    "Un sentimiento de que algo está raro pasando comienza a apoderarse de mi."
+    "Un sentimiento de que algo raro está pasando comienza a apoderarse de mi."
     "No se porque pero solo comienzo a sentirme bastante insegura."
-    ai happy4 "Vamos Ai solo calmate."
+    ai happy4 "Vamos Ai, solo calmate."
     ai "Esto tiene que ser normal, ¿verdad?"
     show ai happy3
     pause 1.5
@@ -75,7 +75,7 @@ label ch_0:
     ai "No no no no no, esto no puede estar pasando."
     play music m1 fadein 1.5
     show ai surprise1 at j11
-    ai "¿Por qué todo esta gris?"
+    ai "¿Por qué todo está gris?"
     show ai surprise1 at j11
     ai "¿Donde están los colores?"
     show ai surprise1 at j11
@@ -83,7 +83,7 @@ label ch_0:
     show ai surprise1 at j11
     extend "cuando, ¿Cuando paso esto?"
     show ai surprise1 at j11
-    ai "¿Por qué paso?"
+    ai "¿Por qué pasó?"
     pause 1.0
     show ai happy5 at cso11
     with Dissolve(0.6)
@@ -96,7 +96,7 @@ label ch_0:
     show ai happy3 at cso11
     "Jajaja, seguro esto debe ser un sueño."
     "Si, seguro lo es."
-    "¿O estare bajo la influencia de alguna droga?"
+    "¿O estaré bajo la influencia de alguna droga?"
     "..."
     "Pero si yo no-"
     "..."
@@ -104,8 +104,8 @@ label ch_0:
     "Mmm..."
     ai happy4 "Seguro no soy la unica que ve todo gris, ¿verdad?"
     pause 1.0
-    "Creo que deberia pensar si mi máma también esta pasando por este problema."
-    ai hmm1 "Espero no ser la unica que pasa por esto."
+    "Creo que debería pensar si mi máma también está pasando por este problema."
+    ai hmm1 "Espero no ser la única que pasa por esto."
     ai "Aunque si esto es una pesadilla seguro despertare en algún momento."
     window hide(Dissolve(.2))
     hide ai
@@ -131,7 +131,7 @@ label ch_0:
     ai "Si lo se máma, me lo dices a menudo."
     shiori hmm0 "Si es correcto, pero no veo que hagas caso a eso."
     ai "Si, perdón."
-    shiori idle "Procura buscar un horario de sueño optimo, asi dormiras bien."
+    shiori idle "Procura buscar un horario de sueño óptimo, asi dormiras bien."
     shiori normal1 "Bueno, antes de que te vayas a la universidad necesito un favor tuyo."
     show shiori idle
     ai "¿Y que necesitas?"
@@ -141,14 +141,14 @@ label ch_0:
     ai "Claro."
     ai "Solo dime que quieres que compre."
     "Se está tomando con calma esto de que todo está gris..."
-    "¿Soy la unica que ve todo así acaso?"
+    "¿Soy la única que ve todo así acaso?"
     "..."
     "No se si preguntarle."
     pause 1.5
     "Veo en la mesa del comedor un objeto que no recuerdo haber visto antes."
     show caja at objectShow
     "Parece una caja de algún color que ahora no puedo notar."
-    "Seguro es un regalo o solo una caja común y corriente que no habia notado antes."
+    "Seguro es un regalo o solo una caja común y corriente que no había notado antes."
     hide caja
     "..."
     ai "Máma, ¿Puedo preguntarte algo?"
@@ -165,46 +165,47 @@ label ch_0:
             ai "¿Y cual es el color de esa caja?"
             show shiori normal1 at j11
             shiori "Me hace gracia que preguntes eso."
-            "Claro, porque es ridiculo preguntar el color de algo."
+            "Claro, porque es ridículo preguntar el color de algo."
             shiori "Es del color favorito de tu tía."
             show shiori idle
-            ai "¿Y cuál es color su favorito?"
-            shiori normal2 "Hmm, su color favorito es el rosado."
-            shiori "Crei que lo recordabas."
+            ai "¿Y cuál es su color favorito?"
+            shiori normal2 "Mm, su color favorito es el rosado."
+            shiori "Creí que lo recordabas."
             shiori "Es bastante raro que también preguntes el color de la caja."
-            ai "Perdon, es que mi pregunta era para saber cual era el color favorito de mi tía."
-            ai "Es que lo habia olvidado."
+            ai "Perdón, es que mi pregunta era para saber cuál era el color favorito de mi tía."
+            ai "Es que lo había olvidado."
         "Dejarlo pasar.":
             ai "Mejor no."
             ai "Ya se me olvido que te iba a preguntar."
             shiori normal2 "Hmm..."
             shiori "¿Enserio no me ibas a preguntar nada?"
             ai "No descuida, no era nada importante."
-            "Creo que preguntarle eso directamente seria muy estupido."
+            "Creo que preguntarle eso directamente sería muy estupido."
             ai "Solo iba a preguntarte sobre esa caja que está en la mesa."
-            shiori hmm0 "Tu debes saber para que es esa caja."
-            ai "No se para que es."
+            shiori hmm0 "Tu debes saber para qué es esa caja."
+            ai "No sé para qué es."
             shiori normal1 "Esa caja contiene un regalo para tu tía, recuerda que hoy es su cumpleaños."
             show shiori idle
-            ai "Vaya se me habia olvidado."
+            ai "Vaya se me había olvidado."
+
     shiori idle "Mientras tu tía no lo sepa esta bien."
     shiori sad2 "Hasta yo a veces lo olvido."
-    shiori "No se lo cuentes."     
+    shiori "No se lo cuentes."    
     pause 1.0
     shiori normal1 "Bueno, en lo que estaba."
     shiori "Necesito que vayas a la tienda."
     show shiori idle
-    ai "Si verdad, ¿Qué necesitas que compre?"
-    shiori normal1 "Bueno, son algunos viveres que faltan para los pastelillos que hare para el evento de encendido de luces de hoy."
+    ai "Sí verdad, ¿Qué necesitas que compre?"
+    shiori normal1 "Bueno, son algunos víveres que faltan para los pastelillos que haré para el evento de encendido de luces de hoy."
     show shiori idle
     "Hoy es el encendido de luces en la plaza de la ciudad por navidad, mi mamá todos los años participa en el evento cocinando algunos pastelillos y otros postres."
     shiori normal1 "Necesito 2 kilos de harina de trigo y un kilo de azúcar, los demás ingredientes ya los tengo."
-    shiori normal3 "Por cierto, la harina de trigo tiene que ser de una marca en especifico."
+    shiori normal3 "Por cierto, la harina de trigo tiene que ser de una marca en específico."
     shiori normal1 "La ultima que compre era bastante buena, {nw=1.0}"
     extend normal3 "aunque no recuerdo su nombre."
     shiori "El color del paquete de la que compre era de color rojo,"
     shiori normal1 "En la mesa está el dinero."
-    shiori "Apresurate porque no querrás llegar tarde a la universidad."
+    shiori "Apresúrate porque no querrás llegar tarde a la universidad."
     show shiori idle at cso11
     ai "Vale, ya regreso."
     shiori normal1 "Te estare esperando."
@@ -212,7 +213,7 @@ label ch_0:
     stop music fadeout 2.0
     pause 2.5
     "¡¡¿¿PORQUE ME TIENE QUE PASAR ESTO??!!"
-    "¿Por qué tiene que ser una harina en especifico?"
+    "¿Por qué tiene que ser una harina en específico?"
     "¿No puede ser una harina común y corriente?"
     "{i}*Suspiro*{/i}"
     pause 2.0
@@ -223,12 +224,12 @@ label ch_0:
     "Que situación tan complicada y extraña."
     pause 1.4
     play audio open_door
-    scene bg ai_departament with hgradient_left_scene_full
+    scene bg ai_house with hgradient_left_scene_full
     pause 1.0
-    "Lo bueno es que la tienda está al lado del edificio en donde vivo."
-    "Lo malo es que no se si sera dificil poder comprar sin ver los colores."
+    "Lo bueno es que la tienda está prácticamente a la vuelta de la esquina."
+    "Lo malo es que no sé si será difícil poder comprar sin ver los colores."
     "Lo he vuelto a decir, pero es super extraño esto que está pasando."
-    "Asi que simplemente no se que pensar o decir."
+    "Así que simplemente no se que pensar o decir."
     pause 2.0
     scene bg convenience_store with hgradient_left_scene_full
     pause 3.0
@@ -253,20 +254,20 @@ label ch_0:
     yu "Es una de las cosas que más me gusta del evento."
     show yu happy1 at cso11
     ai "Está vez no le faltan muchos ingredientes."
-    ai "También cambio la receta de los mismos."
+    ai "También cambió la receta de los mismos."
     yu idle "Eso es una buena noticia."
     yu normal1 "Imagino que ahora son mejores de lo que ya los eran."
     show yu idle
-    ai "Claro, te sorprendera lo buenos que son ahora."
+    ai "Claro, te sorprenderá lo buenos que son ahora."
     yu normal1 "Bueno, aunque no te distraigo más."
-    yu idle "Si necesitas mi ayuda estoy aqui."
+    yu idle "Si necesitas mi ayuda estoy aquí."
     ai "Claro, lo tendre en cuenta."
     pause 1.0
     show yu idle at cso11
     hide yu
     "¿Será necesario que le pida ayuda?"
     "..."
-    "Mejor intento a ver si puedo comprar asi como estoy ahora."
+    "Mejor intento a ver si puedo comprar así como estoy ahora."
     pause 1.0
     scene bg store with hgradient_left_scene_full
     pause 1.0
@@ -274,10 +275,10 @@ label ch_0:
     ai "Mi máma quiere dos kilos de harina de trigo."
     ai hmm2 "Y un kilo de azúcar."
     show ai hmm1
-    "Se me hará más facil comprar la azúcar, eso claro está."
+    "Se me hará más fácil comprar el azúcar, eso claro está."
     hide ai
     pause 1.0
-    "Mirando en uno de los estantes logro ver la azúcar."
+    "Mirando en uno de los estantes logro ver el azúcar."
     show azucar at objectShow
     "¿Con un kilo de azúcar se puede hacer todo lo que mi máma hace?"
     "..."
@@ -285,23 +286,23 @@ label ch_0:
     hide azucar
     pause 1.0
     show ai hmm1 at cso11
-    "Caminando alrededor del estante veo a la harina de trigo."
+    "Caminando alrededor del estante veo la harina de trigo."
     ai "Okey..."
     ai hmm2 "Lo que me faltaba."
     hide ai
     show harina1 at objectShow
-    "Las unicas harinas que puedo distinguir son practicamente del mismo color."
+    "Las únicas harinas que puedo distinguir son prácticamente del mismo color."
     hide harina1
     "O al menos de lo que puedo distinguir como color."
     show harina2 at objectShow
     "Solo logro ver que la de la izquierda es un poco más clara que la de la derecha."
-    "¡¿Comó rayos voy a saber cual es la que quiere mi máma?!"
-    "¿Por qué tenia que ser especifica?"
+    "¡¿Cómo rayos voy a saber cual es la que quiere mi máma?!"
+    "¿Por qué tenía que ser específica?"
     hide harina2
     pause 1.0
     "¿Le pido ayuda a Yu?"
     "Hmm..."
-    "Quizás decirle directamente lo del color seria un poco absurdo."
+    "Quizás decirle directamente lo del color sería un poco absurdo."
     "..."
     "Ya se."
     "Tomo las dos harinas y me dirijo a donde está Yu."
@@ -311,20 +312,20 @@ label ch_0:
     yu "Dime Ai, ¿Qué pasa?"
     show yu idle
     ai "¿Sabes cual es la harina que mi máma compro la ultima vez que vino aquí?"
-    yu normal1 "Claro, ¿Ella te pidio una en especifico?"
+    yu normal1 "Claro, ¿Ella te pidió una en específico?"
     show yu idle
     ai "Si, no se cual fue la que compro."
-    yu normal1 "Compro la que tienes en la mano izquierda."
+    yu normal1 "Compró la que tienes en la mano izquierda."
     yu "Yo misma se la recomende."
     show yu idle
     show harina2 at objectShow
-    "Asi que era la más oscura."
+    "Así que era la más oscura."
     "Que bueno que Yu recordaba cual era."
     "Me salvo."
     hide harina2
     ai "Muchas gracias Yu."
     ai "Me salvaste de que mi máma se enojara jeje."
-    yu happy2 "Descuida, para eso estoy aqui."
+    yu happy2 "Descuida, para eso estoy aquí."
     yu normal1 "¿Eso es todo lo que vas a llevar?"
     show yu idle
     ai "Si, es todo."
@@ -335,37 +336,37 @@ label ch_0:
     show yu happy1
     ai "Igualmente."
     pause 0.5
-    "Este día será fatal, lo se."
-    "Si no logro descubrir porque me paso esto, no se que hare."
+    "Este día será fatal, lo sé."
+    "Si no logro descubrir porque me paso esto, no se que haré."
     stop music fadeout 2.0
     pause 2.4
     scene bg convenience_store with hgradient_left_scene_full
     pause 1.0
     "Saliendo de la tienda comienzo a sentir algo extraño."
-    show vignette2 onlayer effects 
+    show vignette2 onlayer effects
     show black2 onlayer effects2
-    with dissolve 
+    with dissolve
     play music terrorGround fadein 2.0
     "Me siento..."
-    "¿Decaida?"
+    "¿Decaída?"
     "Es una sensación súper rara."
     "La puedo describir como un sentimiento de pesadez extraño."
     "Pero a la vez es como si algo me oprimiera el pecho."
     "Es realmente indescriptible."
-    hide vignette2 onlayer effects 
+    hide vignette2 onlayer effects
     hide black2 onlayer effects2
     with Dissolve(1.6)
     stop music fadeout 2.0
     pause 2.0
     "Pasaron unos momentos y esa sensación se fue..."
     ai "{i}*Suspiro*{/i}"
-    ai "Eso nunca antes habia pasado."
+    ai "Eso nunca antes había pasado."
     ai "Espero que no sea nada malo."
     pause 1.6
-    show bg ai_departament with hgradient_left_scene_full
+    show bg ai_house with hgradient_left_scene_full
     pause 2.0
     "Sinceramente no se que fue esa sensación de hace rato."
-    "Nunca la habia experimentado antes."
+    "Nunca la había experimentado antes."
     "Espero que no se vuelva a repetir."
     pause 1.0
     play audio open_door
@@ -378,15 +379,15 @@ label ch_0:
     ai "Hola de nuevo máma..."
     ai "Aqui traigo lo que pediste."
     shiori normal1 "Excelente."
-    shiori "Ahora si podre terminar los pastelillos."
-    shiori reflexive1 "Se que ha todos les sorprendera mi nueva receta."
-    ai "¿Para eso era la harina que querias?"
+    shiori "Ahora si podré terminar los pastelillos."
+    shiori reflexive1 "Se que ha todos les sorprenderá mi nueva receta."
+    ai "¿Para eso era la harina que querías?"
     show shiori normal1 at j11
     shiori "Pues claro."
-    shiori "Esa harina, dejo los ultimos pastelillos que hice con una consistencia realmente agradable."
+    shiori "Esa harina, dejo los últimos pastelillos que hice con una consistencia realmente agradable."
     shiori idle "Es realmente buena."
     "Hace como dos semanas mi mamá hizo unos pastelillos para probar su nueva receta."
-    "No lo recordaba, pero ahi está el dato."
+    "No lo recordaba, pero ahí está el dato."
     ai "¿Y cuantos pastelillos pretendes hacer?"
     shiori hmm0 "Los que pueda hacer."
     shiori normal1 "Jeje."
@@ -404,10 +405,12 @@ label ch_0:
     pause 1.0
     window auto
     "Mi máma y yo nos sentamos a comer."
-    "Mientras comiamos me comenzo a hacer preguntas que siempre hace."
+    "Mientras comíamos me comenzó a hacer preguntas que siempre hace."
     "¿Qué si tengo novio? o si ¿Por qué no salgo mucho?"
+    "En fin, preguntas que toda mamá hace..."
+    "A veces me incomodan, pero sinceramente..."
     "No me molesta que las haga."
-    "Seria malo que no me las haga."
+    "Sería malo que no me las haga."
     "¿Me entienden?"
     window hide(Dissolve(.2))
     pause 2.0
@@ -423,41 +426,52 @@ label ch_0:
     show shiori idle
     ai "Bueno, es que solo para que lo supieras."
     ai "Bueno..."
-    ai "¿Si alguna vez despertaras sin poder ver los colores que harias?"
+    ai "¿Si alguna vez despertarás sin poder ver los colores que harias?"
     shiori normal2 "Hmm..."
     shiori normal4 "Bueno..."
     shiori "Es un poco extraña la pregunta."
     shiori normal1 "Pero te respondere con esto..."
-    shiori idle "Los colores representan emociones, si me levantara sin poder verlos significaria que algo en mi no está bien."
-    shiori normal1 "Rojo, verde y azul son los colores de la luz, si ellos no están pues los reemplazarán el blanco y el negro."
-    ## Nota de Quetzalcoutl: Yo me sorprendi al enterarme de eso jeje
-    $ renpy.notify("El blanco, negro y gris no son colores, ellos son 'Acromaticos' que significa literalmente 'Sin color'\nEsto porque carecen de tono o saturación, pero comumente los seguimos llamando colores.")
-    shiori "Estos ultimos no son colores por ende todo se vera gris."
+    shiori "Rojo, verde y azul son los colores de la luz, si ellos no están pues los reemplazarán el blanco y el negro."
+    ## Nota de Quetzalcoutl: Yo me sorprendí al enterarme de eso jeje
+    $ renpy.notify(_("El blanco, negro y gris no son colores, ellos son 'Acromaticos' que significa literalmente 'Sin color'\nEsto porque carecen de tono o saturación, pero comumente los seguimos llamando colores."))
+    shiori "Estos últimos no son colores por ende todo se verá gris."
+    shiori idle "Si en el hipotetico caso que dejara de ver los colores, primero me sorprenderia..."
+    shiori normal1 "Seria una situación que me dejaria realmente confundida y asustada..."
+    shiori "Solo me preguntaria.. ¿Por qué?"
+    shiori normal2 "Bueno..."
+    shiori "Pensar en las razones porque me paso también seria lo indicado..."
+    "Todo lo que hice."
+    shiori normal4 "Aunque...{w=1.0}{nw}"
+    extend normal3 "Pues también pensaria en...{w=2.0}{nw}"
     shiori sad2 "Disculpa hasta yo misma me confundi."
     shiori idle "Bueno..."
-    shiori normal1 "Si yo me despertara sin poder ver los colores, pensaria que algo pasa conmigo."
+    shiori "Si yo me despertara sin poder ver los colores,{nw}" 
+    extend normal1 " solo estaria confundida jeje."
     shiori "Aunque eso de ver todo gris es algo que no puede pasar realmente."
-    shiori normal2 "Pero simbolicamente ver todo gris significaria que mentalmente tenemos un problema emocional."
-    shiori "Es decir, algo no está bien en nosotros y vemos todo ya sin la misma emoción de antes."
+    shiori idle "Pero si, si me pasara eso me dejaria realmente confundida y asustada."
     shiori normal1 "¿Eso responde tu pregunta?"
     shiori sad2 "Aunque no creas que no estoy un poco confundida con tu pregunta y mi respuesta."
-    shiori idle "Pensare en una mejor después."
-    shiori normal1 "Asi que dime...{w=1.0}{nw}"
+    shiori idle "Pensaré en una mejor después."
+    shiori normal1 "Así que dime...{w=1.0}{nw}"
     extend "¿Eso responde tu pregunta?"
     ai "Bueno..."
-    "La verdad no se si la responda."
-    "¿Estoy mal mentalmente?"
-    "La verdad no se..."
-    shiori normal1 "Solo piensalo."
-    shiori idle "Si algo te pasa no dudes en decirme."
+    "Dijo exactamente lo que he hecho."
+    "Está es una situación realmente confusa."
+    "Pero puedo confirmar que mi mamá no está pasando por esto."
+    ai "Si, si la responde"
+    shiori normal1 "Me alegro."
+    shiori normal2 "Aunque es realmente rara."
+    shiori "¿Tienes algo que quieras contarme?"
+    shiori "Si algo te pasa no dudes en decirme."
     shiori sad3 "Soy tu madre.."
     shiori "Recuerda que puedes confiar en mi."
     ai "No no, no me pasa nada."
     show shiori normal2
-    ai "Jeje." 
-    ai "Solo es algo que queria preguntarte desde hace rato."
+    ai "Jeje."
+    ai "Solo es algo que quería preguntarte desde hace rato."
     shiori normal1 "Bueno, espero haber resolvido tu duda."
-    shiori "Pero te recuerdo que ahora si puedes llegar tarde a la universidad si no te apresuras."
+    shiori sad2 "Aunque cuando encuentre una mejor respuesta te dire."
+    shiori normal1 "Por cierto, te recuerdo que ahora si puedes llegar tarde a la universidad si no te apresuras."
     show shiori idle
     ai "Ah, es cierto."
     ai "Ire a cambiarme."
@@ -468,26 +482,29 @@ label ch_0:
     scene bg ai_room with hgradient_left_scene_full
     pause 1.0
     window auto
-    "Se me hizo raro lo que mi máma respondio."
-    "No se que habra pensado..."
+    "Mi máma respondió lo mismo que he hecho."
+    "Bueno, al menos puedo saber que hasta ella quedaria confundida con algo asi."
     play music m1 fadein 2.0
     show ai meh1 at cso11
-    ai "Se que los colores pueden transmitir emociones."
-    ai meh2 "Pero nunca los vi como que representaban las emociones de una persona."
-    show ai meh1 
-    "O al menos no se me venia esa idea a la mente."
-    "Para mi es un poco extraño."
+    ai "Aunque me gustaria saber la razón por la cual me ocurrio esto."
+    pause 1.0
+    ai meh2 "Realmente no puedo pensar en algo que lo explique."
+    show ai meh1
+    "Espero poder ver los colores nuevamente."
+    "Ojala esto sea momentaneo..."
+    "La unica razón que puedo pensar que haya causado esto es que esta bajo la influencia de una droga.."
     "Aunque..."
+    "Mejor la descarto, no soy de hacer eso."
     "..."
     pause 1.0
     ai angry2 "Mejor me apresuro..."
-    ai "Si me quedo aqui parada pensando en nada voy a llegar tarde."
+    ai "Si me quedo aquí parada pensando en nada voy a llegar tarde."
     ai idle "Asi que ire a cambiarme."
     ai hmm1 "Aunque..."
     "Si se que me estoy olvidando de algo.."
     pause 2.0
     show ai hmm4
-    "Si, deberia ir a bañarme primero." 
+    "Si, debería ir a bañarme primero."
     ai agh4 "{i}*Suspiro*{/i}"
     ai angry2 "Voy a llegar súper tarde."
     show ai angry2 at cso11
@@ -506,30 +523,30 @@ label ch_0:
     window auto
     pause 1.0
     play music m3 fadein 2.0
-    "Bueno, ahora que ya estoy lista me vestire."
+    "Bueno, ahora me vestiré."
     ai "Viendo la hora, me queda tiempo."
     "Creo."
     ai "Si me apresuro si llegare temprano."
     ai "Bueno..."
     ai "¿Donde está mi ropa?"
     "Buscando en lo que puedo decir que es como un armario, me doy cuenta de algo..."
-    ai "¡¡¡¡TODO ESTA GRIS!!!!!!{w=1.5}{nw}"
+    ai "¡¡¡¡TODO ESTÁ GRIS!!!!!!{w=1.5}{nw}"
     ai "¡¡¡¡¿COMO VERE QUE ROPA PONERME?!!!!{w=1.5}{nw}"
     ai "¡¡¡C4R4J0OOO!!!!"
     ai "Aho-{nw}"
     "Me acabo de dar cuenta que acabo de gritar eso en voz alta."
     pause 1.0
     shiori "Hija, ¿Todo bien?"
-    shiori "Oi un grito..."
-    ai "¡No paso nada!"
+    shiori "Oí un grito..."
+    ai "¡No pasó nada!"
     ai "¡Descuida!"
-    shiori "¿Enserio estás bien?"
+    shiori "¿En Serio estás bien?"
     ai "¡Si si, estoy bien!"
     shiori "Bueno..."
     shiori "Si tu lo dices."
     ai "¡Descuida, no te preocupes!"
-    shiori "Esta bien.."
-    shiori "Apresurate si no quieres llegar tarde."
+    shiori "Está bien.."
+    shiori "Apresúrate si no quieres llegar tarde."
     ai "¡Vale, ya salgo!"
     pause 2.0
     "Eso estuvo cerca."
@@ -578,30 +595,31 @@ label ch_0:
     show shiori idle at cso11
     shiori "Hola de nuevo hija, ¿Ya te vas?"
     ai "Si, espero poder llegar temprano."
-    shiori normal1 "No seas pesimista, aun te queda tiempo." 
+    shiori normal1 "No seas pesimista, aun te queda tiempo."
     shiori "Si sales ahora llegaras temprano."
-    show shiori idle 
+    show shiori idle
     ai "Bueno, entonces..."
-    ai "Me ire ahora jeje."
+    ai "Me iré ahora jeje."
     shiori normal1 "No te detengo más."
-    show shiori idle 
+    show shiori idle
     ai "Adiós máma."
     shiori normal1 "Que te vaya bien."
     shiori normal3 "Recuerda que si necesitas hablar de algo..."
-    shiori "No dudes en decirme."
-    show shiori normal2 
+    shiori "No dudes en hablarme."
+    show shiori normal2
     ai "Descuida máma, no pasa nada."
-    "¿Tan extraña fue mi pregunta?"
-    "..."
+    "¿Qué tan extraña fue mi pregunta?"
+    "La verdad no lo sé..."
+    "...."
     ai "Ahora si me voy."
     shiori normal1 "Adiós hija."
     show shiori idle at cso11
     hide shiori
     stop music fadeout 1.6
     pause 2.0
-    "Mientras camino hacia la puerta solo logro intentar pensar en que me puede deparar este día tan extraño."
+    "Mientras camino hacia la puerta solo logró intentar pensar en que me puede deparar este día tan extraño."
     pause 1.0
-    scene bg ai_departament with hgradient_left_scene_full
+    scene bg ai_house with hgradient_left_scene_full
     pause 1.0
     ai "Siento que me estoy tomando con mucha calma esto de no poder ver los colores."
     ai "¿Verdad?"
@@ -622,26 +640,26 @@ label ch_0:
     ai "Entonces se pone cada vez más raro..."
     show semaforo at objectShow
     pause 1.0
-    "Ahora no puedo ver si el semáforo esta en rojo para poder caminar."
+    "Ahora no puedo ver si el semáforo está en rojo para poder caminar."
     hide semaforo
-    ai "{i}*Suspiro*{/i}" 
+    ai "{i}*Suspiro*{/i}"
     pause 1.0
     "Aunque..."
-    "No todo esta perdido."
+    "No todo está perdido."
     ai "Ahora me siento estupida..."
-    "Si la forma de saber que esta en rojo es viendo si los autos están detenidos."
+    "Si la forma de saber que está en rojo es viendo si los autos están detenidos."
     ai "Solo tengo que esperar un rato..."
     pause 1.0
     window hide(Dissolve(.4))
     scene bg crossing_city with hgradient_left_scene_full
     pause 1.0
     window auto
-    "Paso alrededor de un minuto cuando por fin el semaforo se puso en rojo."
-    "Mejor dicho, que los autos se detenieron..."
-    "Por ende pues el semaforo está en rojo."
+    "Pasó alrededor de un minuto cuando por fin el semáforo se puso en rojo."
+    "Mejor dicho, que los autos se detuvieron..."
+    "Por ende pues el semáforo está en rojo."
     ai "Por fin..."
-    "Comienzo a caminar hacia la otra acera para dirigirme hacia la calle donde esta la estación de trenes."
-    "No esta muy lejos de mi casa, por eso me voy caminando todos los días hacia ella..."
+    "Comienzo a caminar hacia la otra acera para dirigirme hacia la calle donde está la estación de trenes."
+    "No está muy lejos de mi casa, por eso voy caminando todos los días hacia ella..."
     pause 2.0
     scene bg city_station with hgradient_left_scene_full
     pause 1.0
@@ -661,14 +679,16 @@ label ch_0:
     pause 1.0
     window auto
     pause 0.5
-    "Al subirme al tren, comienzo a pensar en una razón de porque paso esto..."
+    "Al subirme al tren, comienzo a pensar en una razón de porqué pasó esto..."
     "Simplemente no se que pensar de todo está situación..."
-    "¿Qué harian si de la nada dejaran de ver los colores?"
-    "¿Como actuarian?"
-    "Yo al menos no se como actuar."
+    "¿Qué harían si de la nada dejaran de ver los colores?"
+    "¿Cómo actuarían?"
+    "Yo al menos no sé cómo actuar."
     "Esto me ha dejado súper confundida."
-    "Solo tendre que esperar..."
+    "Solo tendré que esperar..."
     "A que me llegue una respuesta..."
+    "O despertar de esto, que puedo o no..."
+    "Llamar pesadilla..."
     window hide(Dissolve(.3))
     pause 2.0
     $ persistent.capListComplete["cap0"] = True
