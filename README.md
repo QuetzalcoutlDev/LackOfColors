@@ -1,6 +1,6 @@
 # Lack of Colors
 
-![](https://github.com/QuetzalcoutlDev/LackOfColors/blob/master/game/gui/Logo.png?raw=true)
+![](https://github.com/QuetzalcoutlDev/LackOfColors/blob/main/game/gui/Logo.png?raw=true)
 
 Lack Of Colors is a visual novel made with Ren'Py 8.1.3
 
