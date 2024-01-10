@@ -248,7 +248,7 @@ screen quick_menu():
             style_prefix "quick"
 
             xalign 0.5
-            yalign 1.0
+            yalign 0.96
 
             if config.developer:
                 textbutton _("Atrás") action Rollback()
@@ -291,49 +291,52 @@ style quick_button_text:
 ## ofrece navegación a los otros menús y al inicio del juego.
 
 screen navigation():
+    
+    fixed:
 
-    hbox:
-        style_prefix "navigation"
+        hbox:
+            style_prefix "navigation"
 
-        xpos gui.navigation_xpos
-        yalign 0.96
+            xpos gui.navigation_xpos
+            yalign 0.96
+            xfill True
 
-        spacing gui.navigation_spacing
+            #spacing gui.navigation_spacing
 
-        if main_menu:
+            if main_menu:
 
-            textbutton _("Comenzar") action Start()
+                textbutton _("Comenzar") action Start()
 
-        else:
+            else:
 
-            textbutton _("Historial") action ShowMenu("history")
+                textbutton _("Historial") action ShowMenu("history")
 
-            textbutton _("Guardar") action ShowMenu("save")
+                textbutton _("Guardar") action ShowMenu("save")
 
-        textbutton _("Cargar") action ShowMenu("load")
+            textbutton _("Cargar") action ShowMenu("load")
 
-        textbutton _("Configuración") action ShowMenu("preferences")
+            textbutton _("Configuración") action ShowMenu("preferences")
 
-        if _in_replay:
+            if _in_replay:
 
-            textbutton _("Finaliza repetición") action EndReplay(confirm=True)
+                textbutton _("Finaliza repetición") action EndReplay(confirm=True)
 
-        elif not main_menu:
+            elif not main_menu:
 
-            textbutton _("Menú principal") action MainMenu()
+                textbutton _("Menú principal") action MainMenu()
 
-        textbutton _("Acerca de") action ShowMenu("about")
+            textbutton _("Acerca de") action ShowMenu("about")
 
-        if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
+            if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
 
-            ## La ayuda no es necesaria ni relevante en dispositivos móviles.
-            textbutton _("Ayuda") action ShowMenu("help")
+                ## La ayuda no es necesaria ni relevante en dispositivos móviles.
+                textbutton _("Ayuda") action ShowMenu("help")
 
-        if renpy.variant("pc"):
+            if renpy.variant("pc"):
 
-            ## El botón de salida está prohibido en iOS y no es necesario en
-            ## Android y Web.
-            textbutton _("Salir") action Quit(confirm=not main_menu)
+                ## El botón de salida está prohibido en iOS y no es necesario en
+                ## Android y Web.
+                textbutton _("Salir") action Quit(confirm=not main_menu)
 
 
 style navigation_button is gui_button
@@ -344,7 +347,6 @@ style navigation_button:
     properties gui.button_properties("navigation_button")
 
 style navigation_button_text:
-
     text_align 0.5
     xalign 0.5
     properties gui.button_text_properties("navigation_button")
@@ -369,6 +371,7 @@ screen main_menu():
     ## La sentencia 'use' incluye otra pantalla dentro de esta. El contenido
     ## real del menú principal está en la pantalla de navegación.
     use navigation
+    use social_buttons
 
     if gui.show_name:
         vbox:
@@ -378,10 +381,7 @@ screen main_menu():
             text "[config.version]":
                 style "main_menu_version"
     
-    if not persistent.FirstGame:
-        add "menuFlashInvert"
-    else:
-        add "menuFlash"
+    add "menuFlashInvert"
 
 style main_menu_frame is empty
 style main_menu_vbox is vbox
@@ -461,7 +461,7 @@ screen game_menu(title, scroll=None, yinitial=0.0):
                     transclude
             frame:
                 style "game_menu_navigation_frame"
-    
+
     use navigation
 
     textbutton _("Volver"):
@@ -530,6 +530,71 @@ style return_button:
     yalign 0.9
     yoffset -30
 
+style return_button:
+
+    variant "small"
+    yoffset -48
+
+## Pantalla de mis redes sociales ########################################################
+##
+## Pues son mis redes xd
+
+image twitter_idle:
+    "gui/socialButtons/twitter-idle.png"
+    social_buttons_size
+image twitter_hover:
+    "gui/socialButtons/twitter-hover.png"
+    social_buttons_size
+image twitter_selected:
+    "gui/socialButtons/twitter-selected.png"
+    social_buttons_size
+
+image github_idle:
+    "gui/socialButtons/github-idle.png"
+    social_buttons_size
+image github_hover:
+    "gui/socialButtons/github-hover.png"
+    social_buttons_size
+image github_selected:
+    "gui/socialButtons/github-selected.png"
+    social_buttons_size
+
+image itch_idle:
+    "gui/socialButtons/itch-idle.png"
+    social_buttons_size
+image itch_hover:
+    "gui/socialButtons/itch-hover.png"
+    social_buttons_size
+image itch_selected:
+    "gui/socialButtons/itch-selected.png"
+    social_buttons_size
+
+define quetzalSocials = [
+    "https://twitter.com/ElQuetzalcoutl",
+    "https://github.com/QuetzalcoutlDev",
+    "https://itch.io/profile/quetzalcoutl"
+    ]
+
+transform social_buttons_size:
+    zoom 0.66
+
+screen social_buttons():
+
+    vbox:
+        style "social_buttons"
+
+        imagebutton auto "twitter_%s" action OpenURL(quetzalSocials[0])
+        imagebutton auto "github_%s" action OpenURL(quetzalSocials[1])
+        imagebutton auto "itch_%s" action OpenURL(quetzalSocials[2])
+
+style social_buttons:
+    spacing 10
+    xpos 0.93
+    ypos 0.1
+
+style social_buttons:
+    variant "small"
+    spacing 16
 
 ## Pantalla 'acerca de' ########################################################
 ##
@@ -568,7 +633,6 @@ style about_text is gui_text
 
 style about_label_text:
     size gui.label_text_size
-
 
 ## Pantallas de carga y grabación ##############################################
 ##
@@ -748,6 +812,12 @@ screen preferences():
                 ## Aquí se pueden añadir 'vboxes' adicionales del tipo
                 ## "radio_pref" o "check_pref" para nuevas preferencias.
 
+                vbox:
+                    label _("Idioma")
+                    
+                    textbutton _("Español") action Language(None)
+                    textbutton _("Inglés") action Language("english")
+
             null height (4 * gui.pref_spacing)
 
             hbox:
@@ -798,6 +868,15 @@ screen preferences():
                         textbutton _("Silenciar todo"):
                             action Preference("all mute", "toggle")
                             style "mute_all_button"
+                
+                vbox:
+
+                    label _("Tiempo de notificaciones")
+                    
+                    hbox:
+                        textbutton "5" action SetVariable("persistent.notifyTime", 5)
+                        textbutton "7" action SetVariable("persistent.notifyTime", 7)
+                        textbutton "9" action SetVariable("persistent.notifyTime", 9)
 
 
 style pref_label is gui_label
@@ -1548,7 +1627,7 @@ style main_menu_frame:
 
 style game_menu_outer_frame:
     variant "small"
-    background "gui/phone/overlay/game_menu.png"
+    background "black_overlay"
 
 style game_menu_navigation_frame:
     variant "small"
@@ -1556,7 +1635,7 @@ style game_menu_navigation_frame:
 
 style game_menu_content_frame:
     variant "small"
-    top_margin 0
+    top_margin 60
 
 style pref_vbox:
     variant "small"

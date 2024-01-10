@@ -28,7 +28,12 @@ label start:
 
     if persistent.FirstInit:
         $ persistent.chapter = 0
-        $ chapterInfo = _("{size=-12}Prólogo:{/size}\nAmanecer descolorido")
+
+        if persistent.language == "english":
+            $ chapterInfo = "{size=-12}Prologue:{/size}\nFaded Dawn"
+        else:
+            $ chapterInfo = "{size=-12}Prólogo:{/size}\nAmanecer descolorido"
+
         show chapterTXT "[chapterInfo]" with Dissolve(1.5)
         pause 2.0
         hide chapterTXT with Dissolve(1.5)

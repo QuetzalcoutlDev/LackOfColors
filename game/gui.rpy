@@ -39,7 +39,7 @@ define gui.hover_color = '#b0b0b0'
 
 ## El color del botón de texto seleccionado pero no enfocado. Un botón está
 ## seleccionado si indica el valor actual de la pantalla o preferencia.
-define gui.selected_color = '#ffffff'
+define gui.selected_color = '#7b7979'
 
 ## El color de los botones de texto que no pueden ser seleccionados.
 define gui.insensitive_color = '#8888887f'
@@ -101,7 +101,7 @@ define gui.textbox_height = 185
 
 ## Colocación vertical de la caja de texto en la pantalla. 0.0 para la parte
 ## superior, 0.5 para el centro y 1.0 para la parte inferior.
-define gui.textbox_yalign = 1.0
+define gui.textbox_yalign = 0.97
 
 
 ## Colocación del nombre del personaje hablante, relativa a la caja de texto.
@@ -443,6 +443,8 @@ init python:
         gui.name_xpos = 80
         gui.dialogue_xpos = 90
         gui.dialogue_width = 1100
+
+        gui.textbox_yalign = 1.0
 
         ## Cambia el tamaño y espaciado de varios elementos.
         gui.slider_size = 36

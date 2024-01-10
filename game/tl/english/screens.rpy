@@ -322,3 +322,35 @@ translate english strings:
     old "Menú"
     new "Menu"
 
+# TODO: Translation updated at 2024-01-09 21:47
+
+translate english strings:
+
+    # game/screens.rpy:804
+    old "Tiempo de notificaciones"
+    new "Notification time"
+
+# TODO: Translation updated at 2024-01-10 15:06
+
+translate english strings:
+
+    # game/screens.rpy:752
+    old "Idioma"
+    new "Language"
+
+    # game/screens.rpy:754
+    old "Español"
+    new "Spanish"
+
+    # game/screens.rpy:755
+    old "Ingles"
+    new "English"
+
+# TODO: Translation updated at 2024-01-10 15:09
+
+translate english strings:
+
+    # game/screens.rpy:755
+    old "Inglés"
+    new "English"
+

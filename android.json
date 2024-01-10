@@ -2,7 +2,7 @@
     "expansion": false,
     "google_play_key": null,
     "google_play_salt": null,
-    "heap_size": "3",
+    "heap_size": "2",
     "icon_name": "Lack Of Colors",
     "include_pil": false,
     "include_sqlite": false,

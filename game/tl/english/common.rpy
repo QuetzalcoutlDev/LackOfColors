@@ -1133,3 +1133,11 @@ translate english strings:
     # renpy/common/_errorhandling.rpym:673
     old "Parsing the script failed."
     new "Parsing the script failed."
+# TODO: Translation updated at 2024-01-05 21:26
+
+translate english strings:
+
+    # renpy/common/00preferences.rpy:583
+    old "mute all"
+    new "mute all"
+

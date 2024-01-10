@@ -23,6 +23,7 @@ default persistent.FirstInit = True
 default persistent.FirstGame = False
 default persistent.demo = True
 default persistent.notifyTime = 5
+default persistent.language = None
 
 image black = "#000000"
 image white = "#ffffff"
@@ -54,7 +55,7 @@ image black2:
 
 image cps:
     "gui/cps.png"
-    zoom 0.4 alpha 0.0 xpos 1060 ypos 680
+    zoom 0.4 alpha 0.0 xpos 1060 ypos 668
     block:
         linear 0.3 alpha 1.0 xoffset 5
         pause 0.4

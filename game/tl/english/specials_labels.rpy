@@ -16,4 +16,19 @@ translate english strings:
 
     # game/specials_labels.rpy:58
     old "En menú principal"
-    new "In main menu"
+    new "In main menu"# TODO: Translation updated at 2024-01-09 21:47
+
+translate english strings:
+
+    # game/specials_labels.rpy:23
+    old "Selecciona tú idioma / Select your language"
+    new "Selecciona tú idioma / Select your language"
+
+    # game/specials_labels.rpy:23
+    old "Español."
+    new "Spanish."
+
+    # game/specials_labels.rpy:23
+    old "English."
+    new "English."
+
