@@ -133,5 +133,6 @@ label ch_1:
     pause 3.0
     scene bg front_classroom with hgradient_left_scene_full
     pause 1.0
+    
 
     return

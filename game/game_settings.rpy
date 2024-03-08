@@ -272,8 +272,19 @@ image yu happy2 = "images/sprites/yu/Yu happy1.png"
 image yu happy3 = "images/sprites/yu/Yu happy1.png"
 image yu happy4 = "images/sprites/yu/Yu happy1.png"
 
-### Fondos
+# Tetsuo
+image tetsuo 1 = "images/sprites/tetsuo/1.png"
+image tetsuo 2 = "images/sprites/tetsuo/2.png"
+image tetsuo 3 = "images/sprites/tetsuo/3.png"
+image tetsuo 4 = "images/sprites/tetsuo/4.png"
 
+# Azumi
+image azumi 1 = "images/sprites/azumi/1.png"
+image azumi 2 = "images/sprites/azumi/2.png"
+image azumi 3 = "images/sprites/azumi/3.png"
+image azumi 4 = "images/sprites/azumi/4.png"
+
+### Fondos
 image bg ai_room = "images/bg/ai-room.png"
 image bg ai_livingroom = "images/bg/ai-livingroom.png"
 image bg store = "images/bg/store.png"
