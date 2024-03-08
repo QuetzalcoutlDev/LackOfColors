@@ -28,3 +28,6 @@ Just download Ren'Py 8.1.3 and place the source code folder in your projects fol
 ## About
 
 Lack Of Colors is under the MIT License
+![](https://upload.wikimedia.org/wikipedia/commons/0/0c/MIT_logo.svg)
+
+For more information: https://github.com/QuetzalcoutlDev/LackOfColors/blob/main/LICENSE
