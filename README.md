@@ -12,19 +12,7 @@ You can go directly to download the game from itch.io
 
 itch.io: https://quetzalcoutl.itch.io/lack-of-colors
 
-For Windows
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Windows_logo_and_wordmark_-_2012%E2%80%932021.svg/1024px-Windows_logo_and_wordmark_-_2012%E2%80%932021.svg.png)
-
-For Mac
-![](https://upload.wikimedia.org/wikipedia/commons/2/22/MacOS_logo_%282017%29.svg)
-
-For Linux
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tux.svg/213px-Tux.svg.png)
-
-For Android 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Android_robot.svg/204px-Android_robot.svg.png)
-
-Or play the game in your web browser.
+Available for Windows, Mac, Linux and Android, although you can play the game on the web from itch.io
 
 ## Installing from source
 
