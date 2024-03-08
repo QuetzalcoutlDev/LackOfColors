@@ -10,9 +10,23 @@ init -1 python:
 
 default persistent.capListComplete = {
     "cap0": False, # Prologo 
-    "cap1": False, # Capitulo 1 (Aun no disponible en esta versión)
-    "cap2": False, # Capitulo 2 (Aun no disponible en esta versión)
-    "cap3": False  # Capitulo 3 (Aun no disponible en esta versión)
+    "cap1": False, # Capitulo 1
+    "cap2": False, # Capitulo 2 (Aún no disponible en está versión)
+    "cap3": False, # Capitulo 3 (Aún no disponible en está versión)
+    "cap4": False  # Capitulo 4 (Aún no disponible en está versión)
+}
+
+default persistent.decissions = {
+    "ColorCaja": False,
+    "AyudaHarina0": False
+    "AyudaHarina1": False
+}
+
+default persistent.chaptersInit = {
+    "chapter1": False,
+    "chapter2": False,
+    "chapter3": False,
+    "chapter4": False
 }
 
 default chapter = 0
@@ -90,12 +104,26 @@ default _ai_name = _("Ai")
 default _shiori_name = _("Shiori")
 default _yu_name = _("Yu")
 default _hideaki_name = _("Hideaki")
+default _azumi_name = _("Azumi")
+default _tetsuo_name = _("Tetsuo")
+
+default _boy_npc_1 = _("Chico 1")
+default _boy_npc_2 = _("Chico 2")
+default _girl_npc_1 = _("Chica 1")
+default _girl_npc_2 = _("Chica 2")
 
 define narrator = Character(ctc="cps", ctc_position="fixed")
 define ai = Character(name="[_ai_name]", image="ai", what_prefix='"', what_suffix='"',  who_color="#ffffff", ctc="cps", ctc_position="fixed")
 define shiori = Character(name="[_shiori_name]", image="shiori", what_prefix='"', what_suffix='"',  who_color="#ffffff", ctc="cps", ctc_position="fixed")
 define yu = Character(name="[_yu_name]", image="yu", what_prefix='"', what_suffix='"',  who_color="#ffffff", ctc="cps", ctc_position="fixed")
 define hideaki = Character(name="[_hideaki_name]", image="hideaki", what_prefix='"', what_suffix='"',  who_color="#ffffff", ctc="cps", ctc_position="fixed")
+define azumi = Character(name="[_azumi_name]", image="azumi", what_prefix='"', what_suffix='"',  who_color="#ffffff", ctc="cps", ctc_position="fixed")
+define tetsuo = Character(name="[_tetsuo_name]", image="tetsuo", what_prefix='"', what_suffix='"',  who_color="#ffffff", ctc="cps", ctc_position="fixed")
+
+define boy_1 = Character(name="[_boy_npc_1]", what_prefix='"', what_suffix='"',  who_color="#ffffff", ctc="cps", ctc_position="fixed")
+define boy_2 = Character(name="[_boy_npc_2]", what_prefix='"', what_suffix='"',  who_color="#ffffff", ctc="cps", ctc_position="fixed")
+define girl_1 = Character(name="[_girl_npc_1]", what_prefix='"', what_suffix='"',  who_color="#ffffff", ctc="cps", ctc_position="fixed")
+define girl_2 = Character(name="[_girl_npc_2]", what_prefix='"', what_suffix='"',  who_color="#ffffff", ctc="cps", ctc_position="fixed")
 
 ### Sonido y música
 
@@ -113,8 +141,14 @@ define audio.IamQuetzalcoatl = "audio/IamQuetzalcoatl.ogg"
 define audio.m1 = "audio/Faded_mornings.ogg"
 define audio.m2 = "audio/In_my_mind.ogg"
 define audio.m3 = "audio/Hikara.ogg"
+define audio.m4 = "audio/Good_day.ogg"
 define audio.terrorGround = "audio/terror_ground.ogg"
 define audio.menuTheme = "audio/Lack.ogg"
+
+define audio.stationAmbience = "audio/station_ambience.ogg"
+define audio.trainAnnouncement = "audio/train-announcement.ogg"
+define audio.insideTrain = "audio/inside_train.ogg"
+define audio.trainStop = "<loop 22.425>audio/train_stop.ogg"
 
 ### Sprites de personajes
 
@@ -248,6 +282,10 @@ image bg ai_house = "images/bg/ai-house.png"
 image bg convenience_store = "images/bg/convenience-store.png"
 image bg crossing_city = "images/bg/crossing_city.png"
 image bg city_station = "images/bg/city_station.png"
+image bg station_platform = "images/bg/station_platform.png"
+image bg inside_train = "images/bg/inside_train.png"
+image bg school_entrance = "images/bg/school_entrance.png"
+image bg front_classroom = "images/bg/front_classroom.png"
 
 ### Objetos
 image caja = "images/objects/caja.png"

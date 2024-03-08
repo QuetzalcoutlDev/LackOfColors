@@ -815,8 +815,8 @@ screen preferences():
                 vbox:
                     label _("Idioma")
                     
-                    textbutton _("Español") action Language(None)
-                    textbutton _("Inglés") action Language("english")
+                    textbutton _("Español") action [Language(None), SetVariable("persistent.language", None)]
+                    textbutton _("Inglés") action [Language("english"), SetVariable("persistent.language", "english")]
 
             null height (4 * gui.pref_spacing)
 

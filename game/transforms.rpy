@@ -22,6 +22,7 @@ transform character_show_out(x=640):
             ease .3 xcenter x zoom 0.96
     on hide:
         ease .3 alpha 0.0 ypos 1.71 zoom 0.90
+        
 transform cso11:
     character_show_out(x=640)
 transform cso21:
@@ -89,3 +90,18 @@ transform objectShow:
     
 transform blur(v=1.0):
     blur v
+
+transform train_move():
+    yanchor 1.0 subpixel True xpos -0.1 ypos 1.0 zoom 1.1
+    block:
+        linear 0.1 ypos 1.002
+        pause 0.05
+        linear 0.1 ypos 1.0
+        pause 0.05
+        linear 0.1 ypos 1.005
+        pause 0.05
+        linear 0.1 ypos 1.002
+        pause 0.05
+        linear 0.1 ypos 1.005
+        pause 0.05
+        repeat
