@@ -10,7 +10,7 @@ This game is a demo, so it may be subject to constant changes and the final game
 
 You can go directly to download the game from itch.io
 
-itch.io -> https://quetzalcoutl.itch.io/lack-of-colors
+itch.io: https://quetzalcoutl.itch.io/lack-of-colors
 
 ## Installing from source
 
