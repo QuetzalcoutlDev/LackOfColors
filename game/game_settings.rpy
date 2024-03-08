@@ -18,7 +18,7 @@ default persistent.capListComplete = {
 
 default persistent.decissions = {
     "ColorCaja": False,
-    "AyudaHarina0": False
+    "AyudaHarina0": False,
     "AyudaHarina1": False
 }
 
