@@ -764,7 +764,7 @@ label ch_0:
     window auto
     pause 0.5
     #"Al subirme al tren, comienzo a pensar en una razón de porqué pasó esto..."
-    "Simplemente no se que pensar de todo está situación..."
+    "No se que pensar de toda está situación..."
     "¿Qué harían si de la nada dejaran de ver los colores?"
     "¿Cómo actuarían?"
     "Yo al menos no sé cómo actuar."

@@ -128,11 +128,12 @@ label ch_1:
     "Así que durante el camino desde la estación hasta aquí, aumente bastante mi paso."
     ai "Estoy un poco cansada..."
     ai "Pero llegue a tiempo..."
+    ""
     "Comienzo a caminar hacia dentro de la escuela para dirigirme hacia mi salón de clase..."
     window hide(Dissolve(.2))
     pause 3.0
     scene bg front_classroom with hgradient_left_scene_full
     pause 1.0
-    
+
 
     return
