@@ -183,6 +183,10 @@ init python:
     build.classify("**/**.kra~", None)
     build.classify("**/**.rpy", None)
     build.classify("art/**.kra", None)
+    build.classify("art", None)
+    build.classify("gitVersion.txt", None)
+    build.classify("**/**.md", None)
+    
     ## Para archivar, se clasifican como 'archive'.
 
     build.classify('game/**.png', 'data')
