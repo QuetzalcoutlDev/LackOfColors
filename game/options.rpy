@@ -212,4 +212,4 @@ init python:
 ## Los nombres de usuario y de proyecto asociados con un proyecto itch.io,
 ## separados por una barra.
 
-define build.itch_project = "quetzalcoutl/lackofcolors"
+# define build.itch_project = "quetzalcoutl/lackofcolors"

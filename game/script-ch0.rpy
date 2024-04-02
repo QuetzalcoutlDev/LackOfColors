@@ -1,6 +1,6 @@
 
 define harina_correcta_random = renpy.random.choice([0, 1])
-define persistent.harina_correcta = False
+default persistent.harina_correcta = False
 define harina_option = 0
 
 label ch_0:
@@ -118,10 +118,10 @@ label ch_0:
     pause 1.5
     window auto
     show shiori normal1 at cso11
-    shiori "Buenos días, hija"
+    shiori "Buenos días, hija."
     show shiori idle
     ai "Buenos días, mamá."
-    "Ella es mi madre, Shiori Tanaka"
+    "Ella es mi madre, Shiori Tanaka."
     $ _shiori_name = _("Mamá")
     "Tiene 40 años."
     "Es muy protectora conmigo y suele ser muy tranquila en lo que dice y hace."
@@ -178,7 +178,7 @@ label ch_0:
             shiori "Es bastante raro que también preguntes por el color de la caja."
             ai "Disculpa, es que mi pregunta era para saber cuál es el color favorito de mi tía."
             ai "Es que lo había olvidado."
-            $ persistent.decissions["ColorCaja"] = True
+            $ persistent.decissions['ColorCaja'] = True
 
         "Dejarlo pasar.":
             ai "Mejor no."
@@ -193,7 +193,7 @@ label ch_0:
             shiori normal1 "Esa caja contiene un regalo para tu tía, recuerda que hoy es su cumpleaños."
             show shiori idle
             ai "Vaya, se me había olvidado."
-            $ persistent.decissions["ColorCaja"] = False
+            $ persistent.decissions['ColorCaja'] = False
 
     shiori idle "Mientras tu tía no lo sepa está bien."
     shiori sad2 "Hasta yo a veces lo olvido."
@@ -243,9 +243,9 @@ label ch_0:
     play audio store_ring
     scene bg store with hgradient_left
     pause 1.0
-    show yu idle at cso11
     play music m2 fadein 2.0
     yu "Bienvenido/a a la tienda."
+    show yu idle at cso11
     yu normal1 "Oh eres tú Ai{w=1.0}{nw}"
     show yu normal1 at j11
     extend ", hola, ¿En qué puedo ayudarte?"
@@ -354,7 +354,7 @@ label ch_0:
             yu normal1 "¿Eso es todo lo que vas a llevar?"
             show yu idle
             ai "Si, es todo."
-            $ persistent.decissions["AyudaHarina0"] = True
+            $ persistent.decissions['ayuda_harina0'] = True
             $ harina_option = 0
 
         "Escoger por mi cuenta.":
@@ -398,7 +398,7 @@ label ch_0:
             ai "Si, es todo lo que llevare..."
             "Y espero que sea lo que mi mamá quiere."
             "..."
-            $ persistent.decissions["AyudaHarina1"] = True
+            $ persistent.decissions['ayuda_harina1'] = True
             $ harina_option = 1
     "Procedo a darle el dinero a Yu."
     pause 1.0
@@ -451,8 +451,7 @@ label ch_0:
     ai "Hola de nuevo mamá..."
     ai "Aquí traigo lo que pediste."
     shiori normal1 "Excelente."
-
-    if persistent.decissions["AyudaHarina0"] and harina_option == 0:
+    if persistent.decissions['ayuda_harina0'] and harina_option == 0:
         shiori "Ahora sí podré terminar los pastelitos."
         shiori reflexive1 "Sé que a todos les sorprenderá mi nueva receta."
         ai "¿Para eso era la harina que querías?"
@@ -466,22 +465,30 @@ label ch_0:
         shiori hmm0 "Los que pueda hacer."
         shiori normal1 "Jeje."
         shiori "Haré los que pueda..."
-
-    elif persistent.decissions["AyudaHarina1"] and persistent.harina_correcta and harina_option == 1:
+    elif persistent.decissions['ayuda_harina1'] and harina_option == 1:
         pause 1.0
-        shiori normal2 "Hija, está no era la harina que necesitaba."
-        if harina_correcta_random == 0:
-            shiori normal3 "La harina que necesitaba su empaque era de un color rojo más claro..."
-        elif harina_correcta_random == 0:
-            shiori normal3 "La harina que necesitaba su empaque era de un color rojo más oscuro..."
-        show shiori normal2
-        ai "Perdón, ma.."
-        ai "No sabia cual necesitabas..."
-        shiori normal1 "Descuida, fue mi error..."
-        shiori sad2 "Debi haberte explicado cual necesitaba con más detalles, aunque no lo recordaba jeje."
-        shiori normal1 "Después de comer yo misma voy a cambiarla."
-        shiori "Tú tranquila."
-
+        if not persistent.harina_correcta:
+            shiori normal2 "Hija, está no era la harina que necesitaba."
+            if harina_correcta_random == 0:
+                shiori normal3 "La harina que necesitaba su empaque era de un color rojo más claro..."
+            elif harina_correcta_random == 1:
+                shiori normal3 "La harina que necesitaba su empaque era de un color rojo más oscuro..."
+            show shiori normal2
+            ai "Perdón, ma.."
+            ai "No sabia cual necesitabas..."
+            shiori normal1 "Descuida, fue mi error..."
+            shiori sad2 "Debi haberte explicado cual necesitaba con más detalles, aunque no lo recordaba jeje."
+            shiori normal1 "Después de comer yo misma voy a cambiarla."
+            shiori "Tú tranquila."
+        else:
+            shiori idle "Mira, si trajiste la que necesitaba."
+            shiori normal1 "No recordaba la marca que habia usado."
+            "Que bueno que si era..."
+            "Porque tampoco sabia cual era la que mi mamá queria."
+            shiori normal1 "Ahora si podre terminar los pastelitos."
+            shiori reflexive1 "Sé que a todos les sorprenderá mi nueva receta."
+            shiori normal1 "Me pondré a trabajar en ellos ahora mismo jeje."
+            pause 2.0
     shiori idle "Por cierto...{w=1.0}{nw}"
     shiori "Se te va a hacer tarde para ir a la universidad, será mejor que desayunes de una vez."
     ai "Es cierto."
@@ -523,7 +530,7 @@ label ch_0:
     shiori normal1 "Pero te responderé con esto..."
     shiori "Rojo, verde y azul son los colores de la luz, si ellos no están, pues los reemplazarán el gris, blanco y el negro."
     ## Nota de Quetzalcoutl: Yo me sorprendí al enterarme de eso jeje
-    $ renpy.notify(_("El blanco, negro y gris no son colores, ellos son 'Acromáticos' que significa literalmente 'Sin color'\nEsto porque carecen de tono o saturación, pero comúnmente los seguimos llamando colores."))
+    $ renpy.notify(__("El blanco, negro y gris no son colores, ellos son 'Acromáticos' que significa literalmente 'Sin color'\nEsto porque carecen de tono o saturación, pero comúnmente los seguimos llamando colores."))
     #################################################################
     shiori "Estos últimos no son colores, por ende todo se verá gris."
     shiori idle "Si en el hipotético caso que dejara de ver los colores, primero me sorprendería..."
@@ -540,7 +547,7 @@ label ch_0:
     extend normal1 " solo estaría confundida jeje."
     shiori "Aunque eso de ver todo gris es algo que no puede pasar realmente."
     ## Nota: Esto no tiene nada que ver con lo que le pasá a Ai.
-    $ renpy.notify(_("Nota: Existe una enfermedad rara que produce la incapacidad de no ver parcial o totalmente los colores, osea solo ver blanco, negro, gris y todas sus tonalidades.\nLlamada ¿Monocromatismo?"))
+    $ renpy.notify(__("Nota: Existe una enfermedad rara que produce la incapacidad de no ver parcial o totalmente los colores, osea solo ver blanco, negro, gris y todas sus tonalidades llamada ¿Monocromatismo?"))
     ################################################################
     shiori idle "Pero sí, si me pasara eso me dejaría realmente confundida y asustada."
     shiori normal1 "¿Eso responde tu pregunta?"
@@ -577,7 +584,11 @@ label ch_0:
     pause 1.0
     window auto
     "Mi mamá respondió lo mismo que he hecho."
-    "Bueno, al menos puedo saber que hasta ella quedaria confundida con algo así."
+    "Al menos puedo saber que hasta ella quedaria confundida con algo así."
+    "Aunque..."
+    "¿Cualquiera quedaría confundido y asustado con algo así?"
+    "¿No?"
+    "..."
     play music m1 fadein 2.0
     show ai meh1 at cso11
     ai "Aunque me gustaria saber la razón por la cual me ocurrio esto."
@@ -585,7 +596,7 @@ label ch_0:
     ai meh2 "Realmente no puedo pensar en algo que lo explique."
     "Espero poder ver los colores nuevamente."
     "Ojala esto sea momentaneo..."
-    "Realmente espero que esto no dure demasiado."
+    pause 1.0
     "Espero..."
     pause 1.0
     ai angry2 "Mejor me apresuro..."
@@ -674,7 +685,8 @@ label ch_0:
     "No puedo evitar tener pensamientos intrusivos."
     "Aunque me pasa cada cierto tiempo, lo mejor que hago es ignorarlos."
     play music m3 fadein 1.7
-    ai casual normal2 "Creo que mejor salgo del cuarto."
+    ai casual normal2 "Mejor salgo del cuarto."
+    "Tomo mi mochila y salgo del cuarto."
     hide ai
     pause 1.0
     scene bg ai_livingroom with hgradient_left
@@ -694,14 +706,14 @@ label ch_0:
     ai "Descuida, no pasa nada."
     "¿Qué tan extraña fue mi pregunta?"
     "La verdad no lo sé..."
-    "...."
+    "..."
     ai "Ahora si me voy."
     shiori normal1 "Adiós hija."
     show shiori idle at cso11
     hide shiori
     stop music fadeout 1.6
     pause 2.0
-    "Mientras camino hacia la puerta solo logró pensar en que me puede deparar este día tan extraño."
+    "Mientras camino hacia la puerta solo puedo pensar en que me va a deparar este día tan extraño."
     pause 1.0
     scene bg ai_house with hgradient_left_scene_full
     pause 1.0
@@ -709,6 +721,7 @@ label ch_0:
     ai "¿Verdad?"
     ai "Jaja."
     pause 1.0
+    "..."
     "Mejor dejo de hablar conmigo misma y comienzo a caminar."
     pause 1.0
     scene bg crossing_city with hgradient_left_scene_full
@@ -763,7 +776,7 @@ label ch_0:
     pause 1.0
     window auto
     pause 0.5
-    #"Al subirme al tren, comienzo a pensar en una razón de porqué pasó esto..."
+    # "Al subirme al tren, comienzo a pensar en una razón de porqué pasó esto..."
     "No se que pensar de toda está situación..."
     "¿Qué harían si de la nada dejaran de ver los colores?"
     "¿Cómo actuarían?"
@@ -775,6 +788,6 @@ label ch_0:
     "Llamar pesadilla..."
     window hide(Dissolve(.3))
     pause 2.0
-    $ persistent.capListComplete["cap0"] = True
+    $ persistent.capListComplete['cap0'] = True
 
     return

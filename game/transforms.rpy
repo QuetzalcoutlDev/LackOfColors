@@ -105,3 +105,11 @@ transform train_move():
         linear 0.1 ypos 1.005
         pause 0.05
         repeat
+
+transform zoomCam():
+    zoom 2.0 xcenter 0.5 ycenter 0.5
+    ease 0.4 zoom 1.0 
+    repeat 2
+
+transform Nothing():
+    zoom 1.0

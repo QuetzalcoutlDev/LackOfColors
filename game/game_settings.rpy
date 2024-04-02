@@ -18,8 +18,8 @@ default persistent.capListComplete = {
 
 default persistent.decissions = {
     "ColorCaja": False,
-    "AyudaHarina0": False,
-    "AyudaHarina1": False
+    "ayuda_harina0": False,
+    "ayuda_harina1": False
 }
 
 default persistent.chaptersInit = {
@@ -136,12 +136,14 @@ define audio.open_door = "audio/open_door.ogg"
 define audio.store_ring = "audio/convenience_storering.ogg"
 define audio.shower = "audio/shower.ogg"
 define audio.IamQuetzalcoatl = "audio/IamQuetzalcoatl.ogg"
+define audio.drawing = "audio/drawing.ogg"
 
 # Música
 define audio.m1 = "audio/Faded_mornings.ogg"
 define audio.m2 = "audio/In_my_mind.ogg"
-define audio.m3 = "audio/Hikara.ogg"
+define audio.m3 = "audio/Hikara.ogg" # By Joack Kenny
 define audio.m4 = "audio/Good_day.ogg"
+define audio.m5 = "audio/Dont_limit_yourself.ogg"
 define audio.terrorGround = "audio/terror_ground.ogg"
 define audio.menuTheme = "audio/Lack.ogg"
 
@@ -149,6 +151,9 @@ define audio.stationAmbience = "audio/station_ambience.ogg"
 define audio.trainAnnouncement = "audio/train-announcement.ogg"
 define audio.insideTrain = "audio/inside_train.ogg"
 define audio.trainStop = "<loop 22.425>audio/train_stop.ogg"
+
+# Canciones por Ari_Dev
+define audio.song1 = "audio/Futari_no_Jikan.ogg"
 
 ### Sprites de personajes
 
@@ -235,7 +240,7 @@ image shiori normal1 = "images/sprites/shiori/Shiori normal1.png"
 image shiori normal2 = "images/sprites/shiori/Shiori normal2.png"
 image shiori normal3 = "images/sprites/shiori/Shiori normal3.png"
 image shiori normal4 = "images/sprites/shiori/Shiori normal4.png"
-image shiori reflexive1 = "images/sprites/shiori/Shiori reflexive?1.png"
+image shiori reflexive1 = "images/sprites/shiori/Shiori reflexive_1.png"
 image shiori sad1 = "images/sprites/shiori/Shiori sad1.png"
 image shiori sad2 = "images/sprites/shiori/Shiori sad2.png"
 image shiori sad3 = "images/sprites/shiori/Shiori sad3.png"
@@ -247,7 +252,7 @@ image shiori hmm2 = "images/sprites/shiori/Shiori hmm2.png"
 image shiori hmm3 = "images/sprites/shiori/Shiori hmm3.png"
 image shiori hmm4 = "images/sprites/shiori/Shiori hmm4.png"
 image shiori hmm5 = "images/sprites/shiori/Shiori hmm5.png"
-image shiori hmm0 = "images/sprites/shiori/Shiori hmm?.png"
+image shiori hmm0 = "images/sprites/shiori/Shiori hmm0.png"
 
 # Yu
 image yu idle = "images/sprites/yu/Yu idle.png"
@@ -277,12 +282,18 @@ image tetsuo 1 = "images/sprites/tetsuo/1.png"
 image tetsuo 2 = "images/sprites/tetsuo/2.png"
 image tetsuo 3 = "images/sprites/tetsuo/3.png"
 image tetsuo 4 = "images/sprites/tetsuo/4.png"
+image tetsuo 5 = "images/sprites/tetsuo/5.png"
+image tetsuo 6 = "images/sprites/tetsuo/6.png"
 
 # Azumi
 image azumi 1 = "images/sprites/azumi/1.png"
 image azumi 2 = "images/sprites/azumi/2.png"
 image azumi 3 = "images/sprites/azumi/3.png"
 image azumi 4 = "images/sprites/azumi/4.png"
+image azumi 5 = "images/sprites/azumi/5.png"
+image azumi 6 = "images/sprites/azumi/6.png"
+image azumi 7 = "images/sprites/azumi/7.png"
+image azumi 8 = "images/sprites/azumi/8.png"
 
 ### Fondos
 image bg ai_room = "images/bg/ai-room.png"
@@ -298,11 +309,27 @@ image bg inside_train = "images/bg/inside_train.png"
 image bg school_entrance = "images/bg/school_entrance.png"
 image bg front_classroom = "images/bg/front_classroom.png"
 
+### CG
+
+# Escena dibujo
+image mesa = "images/cg/mesa/mesa.png"
+image mano = "images/cg/mesa/mano.png"
+image dibujo0 = "images/cg/mesa/dibujo0.png"
+image dibujo1 = "images/cg/mesa/dibujo1.png"
+
+image cg mesa_1 = "mesa"
+image cg mesa_2 = Composite((1280, 720), (0, 0), "mesa", (0, 0), "mano")
+image cg mesa_3 = Composite((1280, 720), (0, 0), "mesa", (0, 0), "dibujo0", (0, 0), "mano")
+image cg mesa_4 = Composite((1280, 720), (0, 0), "mesa", (0, 0), "dibujo1", (0, 0), "mano")
+image cg mesa_5 = Composite((1280, 720), (0, 0), "mesa", (0, 0), "dibujo0")
+image cg mesa_6 = Composite((1280, 720), (0, 0), "mesa", (0, 0), "dibujo1")
+
 ### Objetos
 image caja = "images/objects/caja.png"
 image azucar = "images/objects/azucar.png"
 image harina1 = "images/objects/harina_1.png"
 image harina2 = "images/objects/harina_2.png"
+image figuras = "images/objects/figuras.png"
 image semaforo_apagado = "images/objects/semaforo_apagado.png"
 image semaforo_encendido_1 = "images/objects/semaforo_encendido_1.png"
 image semaforo_encendido_2 = "images/objects/semaforo_encendido_2.png"
