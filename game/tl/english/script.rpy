@@ -25,3 +25,23 @@ translate english strings:
     old "{size=-12}Prólogo:{/size}\nAmanecer descolorido"
     new "{size=-12}Prologue:{/size}\nFaded Dawn"
 
+# TODO: Translation updated at 2024-04-20 21:47
+
+translate english strings:
+
+    # game/script.rpy:44
+    old "Profesor"
+    new "Teacher"
+
+    # game/script.rpy:50
+    old "{size=-12}Capitulo 1:{/size}\nColores apagados"
+    new "{size=-12}Chapter 1:{/size}\nMuted colors"
+
+    # game/script.rpy:58
+    old "Capitulo 1: Colores apagados"
+    new "Chapter 1: Muted colors"
+
+    # game/script.rpy:76
+    old "Está versión del juego es solo una demo\n\nGracias por jugar Lack Of Colors\nNo olvides dar tu opinión sobre el mismo\nMe ayudarás mucho con tu comentario\n:)"
+    new "This version of the game is just a demo\n\nThank you for playing Lack Of Colors\nDon't forget to give your opinion about it\nYou will help me a lot with your comment\n:)"
+

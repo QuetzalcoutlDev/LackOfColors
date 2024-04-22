@@ -27,6 +27,22 @@ define config.version = "0.1.1"
 ## comillas triples y deja una línea en blanco entre párrafos.
 
 define gui.about = _p("""
+------------------------------------------------------------
+
+Lack Of Colors está bajo la licencia MIT
+
+Sprites y música están bajo la licencia Creative Commons 4.0 Atribución internacional
+
+Canciones extras fueron realizadas por AriDev y Joack Kenny
+
+Varios efectos de sonidos usados fueron descargados desde Pixai
+
+
+{i}{size=+3}Componentes externos:{/i}{/size}
+
+- discord-rpc.py (Biblioteca externa) está bajo la licencia Mozilla Public License v2.0
+
+------------------------------------------------------------
 """)
 
 ## Nombre breve del juego para ejecutables y directorios en la distribución.

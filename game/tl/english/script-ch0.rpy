@@ -2604,3 +2604,411 @@ translate english strings:
     # game/script-ch0.rpy:437
     old "El blanco, negro y gris no son colores, ellos son 'Acromáticos' que significa literalmente 'Sin color'\nEsto porque carecen de tono o saturación, pero comúnmente los seguimos llamando colores."
     new "White, black and gray are not colors, they are 'Achromatic' which literally means 'Without color'\nThis is because they lack hue or saturation, but we commonly still call them colors."
+# TODO: Translation updated at 2024-04-20 21:47
+
+# game/script-ch0.rpy:47
+translate english ch_0_ea6fc7ef:
+
+    # "Por lo general, evito mis responsabilidades jugando, dibujando o haciendo otra actividad en lugar de hacer mi tarea primero."
+    "I usually avoid my responsibilities by playing, drawing, or doing another activity instead of doing my homework first."
+
+# game/script-ch0.rpy:49
+translate english ch_0_8ea92ec0:
+
+    # "Pero ¿Sabes qué? Siempre termino haciendo las tareas de un día para otro."
+    "But you know what? I always end up doing homework from one day to the next."
+
+# game/script-ch0.rpy:127
+translate english ch_0_2d6d0d1d:
+
+    # shiori "Buenos días, hija."
+    shiori "Good morning, daughter."
+
+# game/script-ch0.rpy:130
+translate english ch_0_e64df1d2:
+
+    # "Ella es mi madre, Shiori Tanaka."
+    "This is my mother, Shiori Tanaka."
+
+# game/script-ch0.rpy:182
+translate english ch_0_c7ecb64f:
+
+    # shiori normal2 "Su color favorito es el rosa."
+    shiori normal2 "Her favorite color is pink."
+
+# game/script-ch0.rpy:219
+translate english ch_0_2b2cdac6:
+
+    # shiori normal1 "La última que compré era bastante buena{w=1.5}, {nw}"
+    shiori normal1 "The last one I bought was pretty good{w=1.5}, {nw}"
+
+# game/script-ch0.rpy:221
+translate english ch_0_23a241cd:
+
+    # shiori "El color del paquete de la que compré era de color rojo."
+    shiori "The color of the package of the one I bought was red."
+
+# game/script-ch0.rpy:257
+translate english ch_0_508ae758:
+
+    # yu normal1 "Oh eres tú Ai{w=1.0}{nw}"
+    yu normal1 "Oh it's you Ai{w=1.0}{nw}"
+
+# game/script-ch0.rpy:259
+translate english ch_0_03911121:
+
+    # extend ", hola, ¿En qué puedo ayudarte?"
+    extend ", Hello how can I help you?"
+
+# game/script-ch0.rpy:277
+translate english ch_0_46a1363c:
+
+    # yu normal1 "Bueno, no te distraigo más."
+    yu normal1 "Well, I won't distract you anymore."
+
+# game/script-ch0.rpy:339
+translate english ch_0_51153d30:
+
+    # yu normal1 "Compró la que tienes en la mano derecha."
+    yu normal1 "Her bought the one you have in your right hand."
+
+# game/script-ch0.rpy:349
+translate english ch_0_4b262306:
+
+    # "Así que era la más clara."
+    "Then it was the clearest flour."
+
+# game/script-ch0.rpy:376
+translate english ch_0_cae8a1bf:
+
+    # "Mejor no la molesto..."
+    "I better not bother her..."
+
+# game/script-ch0.rpy:377
+translate english ch_0_523587c8:
+
+    # "Dudo que sea tan complicado escoger..."
+    "I doubt it's that difficult to choose..."
+
+# game/script-ch0.rpy:379
+translate english ch_0_d49d090d:
+
+    # "Bueno..."
+    "Well..."
+
+# game/script-ch0.rpy:380
+translate english ch_0_03971b63:
+
+    # "Entonces cuál escojo..."
+    "So which one do I choose..."
+
+# game/script-ch0.rpy:382
+translate english ch_0_f8a26b5e:
+
+    # "Tengo la harina cuyo empaque es más claro..."
+    "I have the flour whose packaging is clearer..."
+
+# game/script-ch0.rpy:386
+translate english ch_0_8fadae92:
+
+    # "Y la harina cuyo empaque es más oscuro..."
+    "And the flour whose packaging is darker..."
+
+# game/script-ch0.rpy:387
+translate english ch_0_16c3def3:
+
+    # "Hmmm...."
+    "Mmm..."
+
+# game/script-ch0.rpy:390
+translate english ch_0_67e27177:
+
+    # "Escogeré el más claro..."
+    "I'll choose the one with the clearest packaging..."
+
+# game/script-ch0.rpy:398
+translate english ch_0_2d1503c6:
+
+    # "Escogeré el más oscuro..."
+    "I'll choose the one with the darker packaging..."
+
+# game/script-ch0.rpy:403
+translate english ch_0_6d66ab8e:
+
+    # "Espero haber escogido la marca correcta..."
+    "I hope I chose the right brand..."
+
+# game/script-ch0.rpy:404
+translate english ch_0_5c60acd5:
+
+    # "Espero..."
+    "I hope so..."
+
+# game/script-ch0.rpy:408
+translate english ch_0_934cd458:
+
+    # "Me acerco al mostrador para pagar..."
+    "I go to the counter to pay..."
+
+# game/script-ch0.rpy:410
+translate english ch_0_2ac1c29f:
+
+    # yu "Hola de nuevo Ai."
+    yu "Hello again Ai."
+
+# game/script-ch0.rpy:411
+translate english ch_0_8bfe8994:
+
+    # yu "¿Eso es todo lo que vas a llevar?"
+    yu "¿Eso es todo lo que vas a comprar?"
+
+# game/script-ch0.rpy:413
+translate english ch_0_20500391:
+
+    # ai "Si, es todo lo que llevare..."
+    ai "Yes, that's all I'll buy."
+
+# game/script-ch0.rpy:414
+translate english ch_0_7229cd2c:
+
+    # "Y espero que sea lo que mi mamá quiere."
+    "And I hope it's what my mom wants."
+
+# game/script-ch0.rpy:490
+translate english ch_0_715d0aa7:
+
+    # shiori normal2 "Hija, está no era la harina que necesitaba."
+    shiori normal2 "Daughter, this was not the flour I needed."
+
+# game/script-ch0.rpy:492
+translate english ch_0_00dd7789:
+
+    # shiori normal3 "La harina que necesitaba su empaque era de un color rojo más claro..."
+    shiori normal3 "The flour that needed its packaging was a lighter red color..."
+
+# game/script-ch0.rpy:494
+translate english ch_0_ef09396d:
+
+    # shiori normal3 "La harina que necesitaba su empaque era de un color rojo más oscuro..."
+    shiori normal3 "The flour that needed its packaging was a darker red color..."
+
+# game/script-ch0.rpy:496
+translate english ch_0_0fc66083:
+
+    # ai "Perdón, ma.."
+    ai "Sorry, mom..."
+
+# game/script-ch0.rpy:497
+translate english ch_0_daf3f2ab:
+
+    # ai "No sabia cual necesitabas..."
+    ai "I didn't know which one you needed..."
+
+# game/script-ch0.rpy:498
+translate english ch_0_30901c21:
+
+    # shiori normal1 "Descuida, fue mi error..."
+    shiori normal1 "Don't worry, it was my mistake..."
+
+# game/script-ch0.rpy:499
+translate english ch_0_a227194e:
+
+    # shiori sad2 "Debi haberte explicado cual necesitaba con más detalles, aunque no lo recordaba jeje."
+    shiori sad2 "I should have explained to you which one I needed in more detail, although I didn't remember it hehe."
+
+# game/script-ch0.rpy:500
+translate english ch_0_95cb3b9f:
+
+    # shiori normal1 "Después de comer yo misma voy a cambiarla."
+    shiori normal1 "After eating I'm going to change it myself."
+
+# game/script-ch0.rpy:501
+translate english ch_0_6ad533b4:
+
+    # shiori "Tú tranquila."
+    shiori "You calm down."
+
+# game/script-ch0.rpy:503
+translate english ch_0_2b15f59a:
+
+    # shiori idle "Mira, si trajiste la que necesitaba."
+    shiori idle "Look, you did bring the one I needed."
+
+# game/script-ch0.rpy:504
+translate english ch_0_5aa3d2e8:
+
+    # shiori normal1 "No recordaba la marca que había usado."
+    shiori normal1 "I didn't remember the brand I had used."
+
+# game/script-ch0.rpy:505
+translate english ch_0_ba740d1e:
+
+    # "Que bueno que si era..."
+    "Well at least I wasn't wrong"
+
+# game/script-ch0.rpy:506
+translate english ch_0_04704ce8:
+
+    # "Porque tampoco sabia cual era la que mi mamá quería."
+    "Because I didn't know which one my mom wanted either."
+
+# game/script-ch0.rpy:507
+translate english ch_0_ac26ae0a:
+
+    # shiori normal1 "Ahora si podre terminar los pastelitos."
+    shiori normal1 "Now I can finish the cupcakes."
+
+# game/script-ch0.rpy:508
+translate english ch_0_65f4fbc3_1:
+
+    # shiori reflexive1 "Sé que a todos les sorprenderá mi nueva receta."
+    shiori reflexive1 "I know everyone will be surprised by my new recipe."
+
+# game/script-ch0.rpy:509
+translate english ch_0_7a635468:
+
+    # shiori normal1 "Me pondré a trabajar en ellos ahora mismo jeje."
+    shiori normal1 "I'll get to work on them right now hehe."
+
+# game/script-ch0.rpy:545
+translate english ch_0_13e010f8:
+
+    # ai "¿Si alguna vez despertarás sin poder ver los colores, qué harías?"
+    ai "If you ever woke up unable to see colors, what would you do?"
+
+# game/script-ch0.rpy:550
+translate english ch_0_e57bfcf1:
+
+    # shiori "Rojo, verde y azul son los colores de la luz, si ellos no están, pues los reemplazarán el gris, blanco y el negro."
+    shiori "Red, green and blue are the colors of light, if they are not there, gray, white and black will replace them."
+
+# game/script-ch0.rpy:606
+translate english ch_0_b6923d18:
+
+    # "Al menos puedo saber que hasta ella quedaría confundida con algo así."
+    "At least I can know that even she would be confused by something like that."
+
+# game/script-ch0.rpy:608
+translate english ch_0_2ebff454:
+
+    # "¿Cualquiera quedaría confundido y asustado con algo así?"
+    "Would anyone be confused and scared by something like that?"
+
+# game/script-ch0.rpy:609
+translate english ch_0_e7fb0593:
+
+    # "¿No?"
+    "No?"
+
+# game/script-ch0.rpy:613
+translate english ch_0_b107dd71:
+
+    # ai "Aunque me gustaría saber la razón por la cual me ocurrió esto."
+    ai"Although I would like to know the reason why this happened to me."
+
+# game/script-ch0.rpy:617
+translate english ch_0_957533fc:
+
+    # "Ojala esto sea momentáneo..."
+    "Hopefully this is momentary..."
+
+# game/script-ch0.rpy:619
+translate english ch_0_5c60acd5_1:
+
+    # "Espero..."
+    "I hope so..."
+
+# game/script-ch0.rpy:623
+translate english ch_0_fca05ed5:
+
+    # ai idle "Así que iré a cambiarme."
+    ai idle "So I'll go change."
+
+# game/script-ch0.rpy:650
+translate english ch_0_5e59a54a:
+
+    # ai "Si me apresuro llegaré temprano."
+    ai "If I hurry I'll be early."
+
+# game/script-ch0.rpy:675
+translate english ch_0_a20cefa7_10:
+
+    # "..."
+    "..."
+
+# game/script-ch0.rpy:679
+translate english ch_0_a20cefa7_11:
+
+    # "..."
+    "..."
+
+# game/script-ch0.rpy:699
+translate english ch_0_9c87c2ae:
+
+    # ai "Es algo sencillo, así que no llamara mucho la atención."
+    ai "It's something simple, so it won't attract much attention."
+
+# game/script-ch0.rpy:707
+translate english ch_0_e78b70a6:
+
+    # ai casual normal2 "Mejor salgo del cuarto."
+    ai casual normal2 "I better leave the room."
+
+# game/script-ch0.rpy:708
+translate english ch_0_6ef24245:
+
+    # "Tomo mi mochila y salgo del cuarto."
+    "I grab my backpack and leave the room."
+
+# game/script-ch0.rpy:728
+translate english ch_0_a20cefa7_12:
+
+    # "..."
+    "..."
+
+# game/script-ch0.rpy:735
+translate english ch_0_4001e33f:
+
+    # "Mientras camino hacia la puerta solo puedo pensar en que me va a deparar este día tan extraño."
+    "As I walk towards the door I can only think about what this strange day is going to bring me."
+
+# game/script-ch0.rpy:743
+translate english ch_0_a20cefa7_13:
+
+    # "..."
+    "..."
+
+# game/script-ch0.rpy:785
+translate english ch_0_a20cefa7_14:
+
+    # "..."
+    "..."
+
+# game/script-ch0.rpy:799
+translate english ch_0_8a2fdb1f:
+
+    # "No se que pensar de toda está situación..."
+    "I don't know what to think about this whole situation..."
+
+translate english strings:
+
+    # game/script-ch0.rpy:319
+    old "Pedirle ayuda."
+    new "Ask for help."
+
+    # game/script-ch0.rpy:319
+    old "Escoger por mi cuenta."
+    new "Choose for myself."
+
+    # game/script-ch0.rpy:388
+    old "Empaque más claro...."
+    new "Clearer packaging...."
+
+    # game/script-ch0.rpy:388
+    old "Empaque más oscuro...."
+    new "Darker packaging...."
+
+    # game/script-ch0.rpy:569
+    old "Nota: Existe una enfermedad rara que produce la incapacidad de no ver parcial o totalmente los colores, osea solo ver blanco, negro, gris y todas sus tonalidades llamada ¿Monocromatismo?"
+    new "Note: There is a rare disease that causes the inability to partially or totally not see colors, that is, only seeing white, black, gray and all their shades called Monochromatism?"
+

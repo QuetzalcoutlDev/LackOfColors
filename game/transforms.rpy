@@ -88,7 +88,7 @@ transform objectShow:
     on hide:
         ease .8 alpha 0.0 ypos 1.1
     
-transform blur(v=1.0):
+transform blur_effect(v=1.0):
     blur v
 
 transform train_move():
@@ -112,4 +112,18 @@ transform zoomCam():
     repeat 2
 
 transform Nothing():
-    zoom 1.0
+    ease 0.2 zoom 1.0
+
+transform zoomCam2():
+    xcenter 0.5 ycenter 0.5
+    block:
+        ease 0.1 zoom 1.003
+        ease 0.1 zoom 1.006
+        ease 0.1 zoom 1.003
+        ease 0.1 zoom 1.005
+        ease 0.1 zoom 1.0
+        repeat
+
+transform zoomCam3(z, t):
+    xcenter 0.5 ycenter 0.5
+    linear t zoom z

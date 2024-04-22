@@ -18,3 +18,31 @@ translate english strings:
     old "Hideaki"
     new "Hideaki"
 
+# TODO: Translation updated at 2024-04-20 21:47
+
+translate english strings:
+
+    # game/game_settings.rpy:118
+    old "Azumi"
+    new "Azumi"
+
+    # game/game_settings.rpy:119
+    old "Tetsuo"
+    new "Tetsuo"
+
+    # game/game_settings.rpy:121
+    old "Chico 1"
+    new "Boy 1"
+
+    # game/game_settings.rpy:122
+    old "Chico 2"
+    new "Boy 2"
+
+    # game/game_settings.rpy:123
+    old "Chica 1"
+    new "Girl 1"
+
+    # game/game_settings.rpy:124
+    old "Chica 2"
+    new "Girl 2"
+

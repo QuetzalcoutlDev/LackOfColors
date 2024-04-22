@@ -537,7 +537,7 @@ style return_button:
 
 ## Pantalla de mis redes sociales ########################################################
 ##
-## Pues son mis redes xd
+## Pues son mis redes XD
 
 image twitter_idle:
     "gui/socialButtons/twitter-idle.png"
@@ -590,7 +590,7 @@ screen social_buttons():
 style social_buttons:
     spacing 10
     xpos 0.93
-    ypos 0.1
+    ypos 0.05
 
 style social_buttons:
     variant "small"

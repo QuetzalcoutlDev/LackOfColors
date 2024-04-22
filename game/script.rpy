@@ -46,10 +46,8 @@ label start:
     if not persistent.chaptersInit["chapter1"]:
         $ quick_menu = False
         scene black
-        
         with Dissolve(2.0)
         $ chapterInfo = __("{size=-12}Capitulo 1:{/size}\nColores apagados")
-
         show chapterTXT "[chapterInfo]" with Dissolve(1.5)
         pause 2.0
         hide chapterTXT with Dissolve(1.5)
@@ -57,7 +55,7 @@ label start:
     $ persistent.chaptersInit["chapter1"] = True
     $ chapter = 1
     $ persistent.chapter = 1
-    $ rpc.set_status(details=__("Capitulo 1: Colores apagados"), state=_("Jugando..."))
+    $ rpc.set_status(details=__("Capitulo 1: Colores apagados"), state=__("Jugando..."))
     call ch_1 from _call_ch_1
 
     if persistent.demo:

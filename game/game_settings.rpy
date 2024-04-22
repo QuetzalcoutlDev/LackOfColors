@@ -19,7 +19,9 @@ default persistent.capListComplete = {
 default persistent.decissions = {
     "ColorCaja": False,
     "ayuda_harina0": False,
-    "ayuda_harina1": False
+    "ayuda_harina1": False,
+    "estas_bien0": False,
+    "estas_bien1": False
 }
 
 default persistent.chaptersInit = {
@@ -67,6 +69,15 @@ image black2:
         pause 0.1
         repeat
 
+image black3:
+    "#000000"
+    block:
+        alpha 0.75
+        pause 0.1
+        alpha 0.65
+        pause 0.1
+        repeat
+
 image cps:
     "gui/cps.png"
     zoom 0.4 alpha 0.0 xpos 1060 ypos 668
@@ -98,7 +109,6 @@ transform menuFade:
     easeout 0.9 alpha 0.0
 
 image QuetzalLogo = "images/QuetzalLogo.png"
-image QuetzalLogoInvert = "images/QuetzalLogoInvert.png"
 
 default _ai_name = _("Ai")
 default _shiori_name = _("Shiori")
@@ -119,6 +129,8 @@ define yu = Character(name="[_yu_name]", image="yu", what_prefix='"', what_suffi
 define hideaki = Character(name="[_hideaki_name]", image="hideaki", what_prefix='"', what_suffix='"',  who_color="#ffffff", ctc="cps", ctc_position="fixed")
 define azumi = Character(name="[_azumi_name]", image="azumi", what_prefix='"', what_suffix='"',  who_color="#ffffff", ctc="cps", ctc_position="fixed")
 define tetsuo = Character(name="[_tetsuo_name]", image="tetsuo", what_prefix='"', what_suffix='"',  who_color="#ffffff", ctc="cps", ctc_position="fixed")
+
+define azumi_ai = Character(name="[_azumi_name] y [_ai_name]", what_prefix='"', what_suffix='"',  who_color="#ffffff", ctc="cps", ctc_position="fixed")
 
 define boy_1 = Character(name="[_boy_npc_1]", what_prefix='"', what_suffix='"',  who_color="#ffffff", ctc="cps", ctc_position="fixed")
 define boy_2 = Character(name="[_boy_npc_2]", what_prefix='"', what_suffix='"',  who_color="#ffffff", ctc="cps", ctc_position="fixed")
@@ -144,6 +156,7 @@ define audio.m2 = "audio/In_my_mind.ogg"
 define audio.m3 = "audio/Hikara.ogg" # By Joack Kenny
 define audio.m4 = "audio/Good_day.ogg"
 define audio.m5 = "audio/Dont_limit_yourself.ogg"
+define audio.m6 = "audio/My_thoughts.ogg"
 define audio.terrorGround = "audio/terror_ground.ogg"
 define audio.menuTheme = "audio/Lack.ogg"
 
@@ -294,6 +307,11 @@ image azumi 5 = "images/sprites/azumi/5.png"
 image azumi 6 = "images/sprites/azumi/6.png"
 image azumi 7 = "images/sprites/azumi/7.png"
 image azumi 8 = "images/sprites/azumi/8.png"
+image azumi 9 = "images/sprites/azumi/9.png"
+image azumi 10 = "images/sprites/azumi/10.png"
+image azumi 11 = "images/sprites/azumi/11.png"
+image azumi 12 = "images/sprites/azumi/12.png"
+image azumi 13 = "images/sprites/azumi/13.png"
 
 ### Fondos
 image bg ai_room = "images/bg/ai-room.png"
@@ -304,10 +322,29 @@ image bg ai_house = "images/bg/ai-house.png"
 image bg convenience_store = "images/bg/convenience-store.png"
 image bg crossing_city = "images/bg/crossing_city.png"
 image bg city_station = "images/bg/city_station.png"
-image bg station_platform = "images/bg/station_platform.png"
-image bg inside_train = "images/bg/inside_train.png"
+
+image station_platform_0 = Composite((1280, 720), (0, 0), "images/bg/station_platform.png", (0, 0), "images/bg/station_platform_peoples0.png")
+image station_platform_1 = Composite((1280, 720), (0, 0), "images/bg/station_platform.png", (0, 0), "images/bg/station_platform_peoples1.png")
+image station_platform_2 = Composite((1280, 720), (0, 0), "images/bg/station_platform.png", (0, 0), "images/bg/station_platform_peoples0.png", (0, 0), "images/bg/station_platform_peoples1.png")
+
+image bg station_platform:
+    "station_platform_0" with Dissolve(0.4)
+    pause 2.0
+    "station_platform_1" with Dissolve(0.4)
+    pause 2.0
+    "station_platform_2" with Dissolve(0.4)
+    pause 2.0
+    "station_platform_1" with Dissolve(0.4)
+    pause 2.0
+
+    repeat
+
+image bg inside_train = Composite((1280, 720), (0, 0), "images/bg/inside_train.png", (0, 0), "inside_train_peoples")
 image bg school_entrance = "images/bg/school_entrance.png"
 image bg front_classroom = "images/bg/front_classroom.png"
+image bg school_hallway = "images/bg/school_hallway.png"
+image bg nursing = "images/bg/nursing.png"
+image bg sky = "images/bg/sky.png"
 
 ### CG
 
@@ -323,6 +360,14 @@ image cg mesa_3 = Composite((1280, 720), (0, 0), "mesa", (0, 0), "dibujo0", (0, 
 image cg mesa_4 = Composite((1280, 720), (0, 0), "mesa", (0, 0), "dibujo1", (0, 0), "mano")
 image cg mesa_5 = Composite((1280, 720), (0, 0), "mesa", (0, 0), "dibujo0")
 image cg mesa_6 = Composite((1280, 720), (0, 0), "mesa", (0, 0), "dibujo1")
+
+image cg en_cama_1 = "images/cg/en_cama/cg-ai_en_cama0.png"
+image cg en_cama_2 = "images/cg/en_cama/cg-ai_en_cama1.png"
+
+image cg talents_show = "images/cg/cg-talents.png"
+
+image cg frente_al_espejo_1 = "images/cg/frente_al_espejo/cg-frente_al_espejo0.png"
+image cg frente_al_espejo_2 = "images/cg/frente_al_espejo/cg-frente_al_espejo1.png"
 
 ### Objetos
 image caja = "images/objects/caja.png"
